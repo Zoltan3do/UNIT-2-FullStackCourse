@@ -53,4 +53,16 @@ Euristiche di Nielsen -> :
 
 
 Modelli di Norman -> :
-1. Scopo: decidiamo 
+1. Scopo: decidiamo quale scopo vogliamo raggiungere -> Aprire il getto d'acqua.
+
+2. Intenzione: decidiamo cosa fare per raggiungere lo scopo -> Girare la manopola.
+
+3. Azione: pianifichiamo le azioni da compiere -> Ruotare la manopola in una direzione.
+
+4. Esecuzione: eseguiamo le azioni pianificate -> Fuoriuscita dell'acqua.
+
+5. Percezione: osserviamo come è cambiato il sistema -> La corsa della manopola finisce e l'acqua esce.
+
+6. Interpretazione: elaboriamo ciò che abbiamo osservato -> Effetto causato dalla mia azione.
+
+7. Valutazione: decidiamo se lo scopo iniziale è stato raggiunto -> Scopo raggiunto.
