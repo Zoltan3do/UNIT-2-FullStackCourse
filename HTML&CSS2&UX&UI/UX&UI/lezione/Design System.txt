@@ -1,0 +1,15 @@
+- Scelta dei font
+- Leggibilità su mobile e desktop
+- Set di colori
+- Set di icone
+- Set di foto
+- Set di illustrazioni vettoriali
+- Set di documenti (whitepaper, cataloghi, brochure, ecc.)
+- Stile di scrittura (tu, lei, voi, noi)
+- Scelta dei tools (framework, librerie, linguaggi, ecc.
+
+OBIETTIVI:
+- Coerenza del brand su tutto l'ecosistema
+- Migliore familiarizzazione da parte dell'utente
+- UX cross device elevata
+- Condivisione di risorse tra diversi ambienti (es: font ed icone per materiale cartaceo e digitale)

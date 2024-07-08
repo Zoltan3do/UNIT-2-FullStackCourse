@@ -1,0 +1,5 @@
+- Navigazione sicura (HTTPS)
+- Mobile friendly
+- Caricamento rapido
+- No blocchi di annunci
+- Core vitals
