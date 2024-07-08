@@ -1,6 +1,9 @@
 /* IMPOSTAZIONI GENERALI */
-html {font-size: 62.5%;}
-body { 
+html {
+    font-size: 62.5%;
+}
+
+body {
     font-family: Poppins, 'Helvetica Neue', sans-serif;
     font-size: 1.4rem;
     line-height: 1.5;
@@ -8,13 +11,21 @@ body {
     background-image: url('../img/sfondo.png');
     background-position: center center;
 }
-* {box-sizing: border-box;}
-hr {display: none;} /* rimuove l'elemento */
+
+* {
+    box-sizing: border-box;
+}
+
+hr {
+    display: none;
+}
+
+/* rimuove l'elemento */
 
 /* HEADER */
 header {
-    background: rgb(0,160,198);
-    background: linear-gradient(180deg, rgba(0,160,198,1) 0%, rgba(3,109,134,1) 68%);
+    background: rgb(0, 160, 198);
+    background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -23,22 +34,28 @@ header {
     margin-bottom: 1.5em;
     padding: 2em 1.5em;
 }
+
 header div img {
     margin-bottom: 20px;
 }
+
 header nav ul {
     margin: 0;
 }
+
 header nav li {
     list-style: none;
 }
+
 header nav li a {
     color: white;
     text-decoration: none;
 }
+
 header nav li a:hover {
     color: red;
 }
+
 header nav li a::before {
     content: "\22c6\0020";
 }
@@ -48,13 +65,15 @@ main {
     background-color: #fff;
     box-shadow: 0 3px 3px #444;
     padding: 2em 1em;
-    margin-bottom:1.5em ;
+    margin-bottom: 1.5em;
 }
-section { 
+
+section {
     background-color: #e3e3e3;
     padding: 1em;
     margin-bottom: 2em;
 }
+
 section h2 {
     text-align: center;
     color: #333;
@@ -71,28 +90,41 @@ h1 {
     letter-spacing: -0.03em;
     margin-bottom: 0.7em;
 }
-p, address, ul, ol, dl, blockquote {
+
+p,
+address,
+ul,
+ol,
+dl,
+blockquote {
     margin-bottom: 1.2em;
 }
-h1 + p {
+
+h1+p {
     color: #a0a0a0;
 }
-ul, ol {
+
+ul,
+ol {
     margin-left: 2em;
 }
+
 a {
     color: #00A0C6;
     font-weight: bold;
 }
+
 strong {
     color: #a02571;
     font-weight: bold;
 }
+
 code {
     background-color: #e3e3e3;
     border: 1px solid #969494;
     border-radius: 5px;
 }
+
 iframe {
     width: 100%;
     height: auto;
@@ -104,19 +136,24 @@ iframe {
 table {
     margin-bottom: 2em;
 }
+
 caption {
     font-weight: bold;
     font-style: italic;
 }
+
 thead tr {
     background-color: #3f6bca;
     color: #ffffff;
 }
-th, td {
+
+th,
+td {
     padding: 12px 15px;
     vertical-align: bottom;
     text-align: center;
 }
+
 tbody tr {
     border-bottom: 1px solid #dddddd;
 }
@@ -135,6 +172,7 @@ input {
     border: 0;
     border-bottom: 1px dashed #333;
 }
+
 button {
     padding: 4px 7px;
     background-color: #3f6bca;
@@ -152,29 +190,302 @@ aside h2 {
     text-transform: uppercase;
     margin-bottom: 1em;
 }
+
 aside div {
     background-color: #e3e3e3;
     border: 1px solid #c3c3c3;
     margin-bottom: 1em;
     padding: 1em;
 }
+
 aside div p:last-child {
     margin-bottom: 0;
     font-size: 0.8em;
     text-align: right;
 }
 
+section h2:nth-of-type(2) {
+    background-color: #969494 !important;
+}
+
 
 /* FOOTER */
 footer {
-    background: rgb(53,53,53);
-    background: linear-gradient(0deg, rgba(53,53,53,1) 0%, rgba(5,85,103,1) 68%);
+    background: rgb(53, 53, 53);
+    background: linear-gradient(0deg, rgba(53, 53, 53, 1) 0%, rgba(5, 85, 103, 1) 68%);
     box-shadow: 0 3px 3px #444;
     color: #f0f0f0;
     padding: 1em;
     text-align: center;
     font-size: 1.2rem;
 }
+
 footer a {
     color: fuchsia;
+}
+
+
+@media screen and (min-width:320px) {
+
+    header div img {
+        margin-bottom: 20px;
+        width: 65%;
+    }
+
+    header nav li {
+        display: inline-block;
+        margin: auto 5px;
+    }
+
+    nav li a {
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+
+    header {
+        font-weight: 400;
+        letter-spacing: 0px;
+    }
+
+    h1 {
+        font-size: 2em;
+        line-height: 1.2;
+    }
+
+    article p {
+        font-size: 0.9em;
+        font-weight: 500;
+    }
+
+    footer {
+        font-size: 1.1em
+    }
+
+    aside h2 {
+        font-size: 1.8em;
+    }
+
+
+}
+
+
+@media screen and (min-width:576px) {
+
+    aside a {
+        font-size: 1em;
+    }
+
+    header div img {
+        margin-bottom: 20px;
+        width: 65%;
+    }
+
+    header nav li {
+        display: inline-block;
+        margin: auto 5px;
+    }
+
+    nav li a {
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+
+    header {
+        font-weight: 400;
+        letter-spacing: 0px;
+    }
+
+    h1 {
+        font-size: 3.1em !important;
+        line-height: 1.2;
+    }
+
+    article p {
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+
+    footer {
+        font-size: 1.1em
+    }
+
+    aside h2 {
+        font-size: 1.8em;
+    }
+
+    h2:first-of-type {
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+
+    table {
+        width: 80%;
+        margin: 75px auto
+    }
+
+    #user_email {
+        width: 75%;
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        font-size: 0.8em;
+        font-weight: 100;
+        height: 35px;
+        width: 100px;
+    }
+
+    aside h2 {
+        font-size: 2em !important;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+
+    header div,
+    header img,
+    header p,
+    header nav {
+        display: inline-block !important;
+        vertical-align: middle;
+        margin: 0;
+    }
+
+    header {
+        text-align: left;
+        padding: 0.8em 3.5em;
+        font-size: 0.8em;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    header img {
+        margin: 0 1.5em 0 0 !important;
+    }
+
+    header div {
+        width: max-content
+    }
+
+    header nav {
+        text-align: right;
+        float: right;
+        vertical-align: middle;
+        margin-top: 30px;
+    }
+
+    header p {
+        font-size: 1.8em;
+    }
+
+    header li {
+        font-size: 1.8em;
+    }
+
+
+    main {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 3.8em;
+        line-height: 1.2;
+    }
+
+    article p {
+        font-size: 1.3em;
+        font-weight: 500;
+    }
+
+    article li {
+        font-size: 1.3em;
+        font-weight: 500;
+
+    }
+
+    .formattazione {
+        font-size: 1.5em !important;
+    }
+
+
+    footer {
+        font-size: 1.1em
+    }
+
+    aside h2 {
+        font-size: 1.8em;
+    }
+
+    h2:first-of-type {
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+
+    table {
+        width: 80%;
+        margin: 75px auto
+    }
+
+    #user_email {
+        width: 75%;
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        font-size: 0.8em;
+        font-weight: 100;
+        height: 35px;
+        width: 20%;
+    }
+
+    aside h2 {
+        font-size: 2em !important;
+    }
+
+    iframe,
+    section {
+        display: inline-block;
+        width: 49.5%;
+        margin: 20px auto;
+        height: 200px;
+        vertical-align: middle;
+        border-radius: 20px;
+    }
+
+    footer {
+        width: 80%;
+        margin: 20px auto;
+        height: 250px;
+        font-size: 1.8em !important;
+    }
+
+    aside div {
+        display: inline-block;
+        width: 33%;
+        margin: 0 !important
+    }
+
+    aside div :last-child {
+        font-size: 0.9em !important;
+    }
+
+}
+
+
+@media print {
+
+    header,
+    footer,iframe, article {
+        display: none;
+    }
+
+    tr,th,td {
+        background-color: none;
+    }
+
 }
