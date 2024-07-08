@@ -1,0 +1,19 @@
+[PASSI INIZIALI]
+- Acquisire le esigenze del cliente
+- Definire il target di riferimento
+- Analizzare il mercato e la concorrenza
+- Definire una strategia grafica e dei concept
+- Definire la struttura dei contenuti
+- Rendere ogni obiettivo raggiungibile in max 3 step
+
+
+[ERRORI DA EVITARE]
+- Non ascoltare il cliente (peccando di presunzione)
+- Non assecondare il cliente -> compromessi
+- Riciclare materiali
+- Non ottimizzare le immagini
+- Utilizzare troppe risorse grafiche (font inclusi)
+- Progettare senza costante confronto
+- Utilizzare set di colori impropri
+- Modificare oggetti consolidati (Baby-Duck-Syndrome: piace ciò che conosciamo già)
+- Non utilizzare beta tester

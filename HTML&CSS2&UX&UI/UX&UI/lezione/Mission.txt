@@ -1,0 +1,13 @@
+UTILE: Tiene conto del target e del contesto nel quale si inserisce.
+
+USABILE: Mette al centro l'utente rendendo la sua navigazione più agevole e piacevole possibile. L'usabilità è un aspetto importante ma non è l'unico.
+
+ATTRATTIVO: Riesce a integrare bene tutti gli elementi che rappresentano l'emotional design: il potere e il valore dell'immagine, la web identity, il brand, etc.
+
+CHIARO: Mette a disposizione tutte le informazioni degli utenti senza nasconderle.
+
+ACCESSIBILE: A tutti senza distinzione di capacità psico-fisiche.
+
+CREDIBILE: E' necessario essere onesti e trasparenti per sopravvivere ai commenti virali della rete.
+
+PREZIOSO: Fornisce valore aggiunto e soddisfa gli obiettivi inizialmente stabiliti.

@@ -1,0 +1,56 @@
+Scheumatismo -> tradurre qualcosa di reale stilisticamente fedele in un modello grafico 3d di visualizzazione su una pagina web o applicazione.
+
+
+
+Euristiche di Nielsen -> :
+1. [INFORMARE L'UTENTE SULLO STATO ATTUALE DEL SISTEMA]	Chiamate asincrone, 
+	Form organizzato in N step, 
+	Validazione in tempo reale;
+
+2. [PARLARE IL LINGUAGGIO DELL'UTENTE]
+	Usare linguaggio semplice/Ridurre l'enfasi, 	Sintetizzare/Evidenziare keywords, Titoli e intestazioni brevi e descrittivi, 
+	Usare liste puntate;
+
+3. [DARE CONTROLLO E LIBERTA' DI USCITA ALL'UTENTE]
+	Attenzione ai redirect, Attenzione ai vicoli ciechi, 
+	Attenzione alle pagine di errore (403,404,500), 	Enfatizzare la funzione di ricerca interna;
+
+4. [ESSERE COERENTI AGLI STANDARD] 
+	Posizione dei menù, 
+	Colori e sottilineature dei link, 
+	Forme delle icone;
+
+5. [PREVENIRE GLI ERRORI] 
+	Usare alert con il tasto ok, 
+	Avvisare prima della cancellazione dei dati, 	Rendere visibili nella zona above-the-fold i messaggi di errore;
+
+6. [FAVORIRE IL RICONOSCIMENTO PIUTTOSTO CHE IL RICORDO]
+	Utilizzare cookies di sessione(liste, preferiti, login),
+	Layout personalizzati;
+
+7. [FORNIRE SCORCIATOIE PER GLI UTENTI ESPERTI]
+	Fornire shortcut esplicite, 
+	Predisporre login, 
+	feed rss, 
+	bottoni di social sharing, 
+	e renderle a portata di mano;
+
+8. [ADOTTARE UN'ESTETICA E UN DESIGN MINIMALISTA]
+	Le informazioni dovrebbero prevalere sull'estetica, 
+	La grafica non deve distrarre rispetto ai contenuti, 
+	Usare adeguatamente gli spazi bianchi fra gli oggetti, 
+	Evitare sfondi con colori accesi o assoluti;
+
+9. [AIUTARE L'UTENTE A RICONOSCERE, DIAGNOSTICARE E RECUPERARE GLI ERRORI]
+	Menù breadcrumb,
+	Messaggistica di errore nei form, 	
+	Conferme plurime in caso di azioni delicate, 	Pagine 404 esplicative;
+
+10. [FORNIRE AIUTO E DOCUMENTAZIONE]
+	Tipo visuale sui codici di conferma delle carte di credito, 
+	Formati di valori da inserire nei form, 	Suggerimenti su strong password.
+
+
+
+Modelli di Norman -> :
+1. Scopo: decidiamo 
