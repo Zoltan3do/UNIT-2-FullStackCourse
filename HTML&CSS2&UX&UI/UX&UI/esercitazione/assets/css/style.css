@@ -348,42 +348,22 @@ footer a {
     header img,
     header p,
     header nav {
-        display: inline-block !important;
+        display: inline-block;
         vertical-align: middle;
-        margin: 0;
+        font-size: 1.2em;
     }
 
-    header {
-        text-align: left;
-        padding: 0.8em 3.5em;
-        font-size: 0.8em;
-        width: 80%;
-        margin: 20px auto;
+    header img{
+        width: 48%;
     }
 
-    header img {
-        margin: 0 1.5em 0 0 !important;
+    header p{
+        width: 48%;
     }
-
-    header div {
-        width: max-content
+    
+    header div{
+        width: 30%;
     }
-
-    header nav {
-        text-align: right;
-        float: right;
-        vertical-align: middle;
-        margin-top: 30px;
-    }
-
-    header p {
-        font-size: 1.8em;
-    }
-
-    header li {
-        font-size: 1.8em;
-    }
-
 
     main {
         width: 80%;
@@ -404,13 +384,7 @@ footer a {
     article li {
         font-size: 1.3em;
         font-weight: 500;
-
     }
-
-    .formattazione {
-        font-size: 1.5em !important;
-    }
-
 
     footer {
         font-size: 1.1em
@@ -466,8 +440,9 @@ footer a {
 
     aside div {
         display: inline-block;
-        width: 33%;
-        margin: 0 !important
+        width: 32%;
+        margin: 0 auto;
+        height: 120px;
     }
 
     aside div :last-child {
@@ -475,6 +450,10 @@ footer a {
     }
 
 }
+
+
+
+
 
 
 @media print {
