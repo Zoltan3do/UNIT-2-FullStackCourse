@@ -1,0 +1,6 @@
+Position absolute cambia l'elemento in base al genitore non statico più vicino. (di solito si usa position relative all'elemento parent).
+
+Si posiziona un elemento absolute in base al padre con gli attributi (top, left, right e bottom). 
+
+Per posizionare il base a se stesso un elemento si usa la proprietà transform: translate(percentuale verticale,percentuale orizzontale).
+

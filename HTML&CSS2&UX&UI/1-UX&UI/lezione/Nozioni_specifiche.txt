@@ -3,17 +3,21 @@ Scheumatismo -> tradurre qualcosa di reale stilisticamente fedele in un modello 
 
 
 Euristiche di Nielsen -> :
-1. [INFORMARE L'UTENTE SULLO STATO ATTUALE DEL SISTEMA]	Chiamate asincrone, 
+1. [INFORMARE L'UTENTE SULLO STATO ATTUALE DEL SISTEMA]	
+	Chiamate asincrone, 
 	Form organizzato in N step, 
 	Validazione in tempo reale;
 
 2. [PARLARE IL LINGUAGGIO DELL'UTENTE]
-	Usare linguaggio semplice/Ridurre l'enfasi, 	Sintetizzare/Evidenziare keywords, Titoli e intestazioni brevi e descrittivi, 
+	Usare linguaggio semplice/Ridurre l'enfasi, 	
+	Sintetizzare/Evidenziare keywords, 
+	Titoli e intestazioni brevi e descrittivi, 
 	Usare liste puntate;
 
 3. [DARE CONTROLLO E LIBERTA' DI USCITA ALL'UTENTE]
 	Attenzione ai redirect, Attenzione ai vicoli ciechi, 
-	Attenzione alle pagine di errore (403,404,500), 	Enfatizzare la funzione di ricerca interna;
+	Attenzione alle pagine di errore (403,404,500), 	
+	Enfatizzare la funzione di ricerca interna;
 
 4. [ESSERE COERENTI AGLI STANDARD] 
 	Posizione dei menù, 
@@ -22,7 +26,8 @@ Euristiche di Nielsen -> :
 
 5. [PREVENIRE GLI ERRORI] 
 	Usare alert con il tasto ok, 
-	Avvisare prima della cancellazione dei dati, 	Rendere visibili nella zona above-the-fold i messaggi di errore;
+	Avvisare prima della cancellazione dei dati, 	
+	Rendere visibili nella zona above-the-fold i messaggi di errore;
 
 6. [FAVORIRE IL RICONOSCIMENTO PIUTTOSTO CHE IL RICORDO]
 	Utilizzare cookies di sessione(liste, preferiti, login),
@@ -44,11 +49,13 @@ Euristiche di Nielsen -> :
 9. [AIUTARE L'UTENTE A RICONOSCERE, DIAGNOSTICARE E RECUPERARE GLI ERRORI]
 	Menù breadcrumb,
 	Messaggistica di errore nei form, 	
-	Conferme plurime in caso di azioni delicate, 	Pagine 404 esplicative;
+	Conferme plurime in caso di azioni delicate, 	
+	Pagine 404 esplicative;
 
 10. [FORNIRE AIUTO E DOCUMENTAZIONE]
 	Tipo visuale sui codici di conferma delle carte di credito, 
-	Formati di valori da inserire nei form, 	Suggerimenti su strong password.
+	Formati di valori da inserire nei form, 	
+	Suggerimenti su strong password.
 
 
 
