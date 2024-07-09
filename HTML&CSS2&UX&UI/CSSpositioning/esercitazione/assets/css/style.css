@@ -28,12 +28,12 @@ footer span:nth-of-type(2) {
 
 footer span:first-of-type {
   top: -5%;
-  right: -2%
+  right: -3%
 }
 
 footer span:nth-of-type(2) {
   top: 37%;
-  right: -2%
+  right: -3%
 }
 
 footer span:last-of-type {
@@ -41,14 +41,14 @@ footer span:last-of-type {
   display: block;
   position: absolute;
   bottom: -3%;
-  right: -2%
+  right: -3%
 }
 
 footer span:first-of-type,
 footer span:nth-of-type(2),
 footer span:last-of-type {
   border: 2px solid white;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(2px);
   font-size: 2.2em;
   padding: 5px;
@@ -84,14 +84,6 @@ header {
     padding: 1em;
   }
 
-  svg {
-    position: absolute;
-    right: -5%;
-    width: 90%;
-    margin: 0 auto;
-    z-index: 1;
-    margin-top: -50px;
-  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -99,27 +91,10 @@ header {
     margin-bottom: 20px;
   }
 
-  svg {
-    position: absolute;
-    right: 50px;
-    width: 60%;
-    margin: 0 auto;
-    z-index: 1;
-    margin-top: -50px;
-  }
 
 }
 
 @media screen and (min-width: 1200px) {
-
-  svg {
-    position: absolute;
-    right: 8%;
-    width: 60%;
-    margin: 0 auto;
-    z-index: 1;
-    margin-top: -50px;
-  }
 
   header {
     text-align: left;
@@ -198,10 +173,9 @@ main {
     border: 2px solid white;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(2px);
-    font-size: 3em;
+    font-size: 2.2em;
     padding: 5px;
     border-radius: 10px;
-    margin-bottom: 5px;
 
   }
 
@@ -212,9 +186,11 @@ main {
   }
 
   header span:last-of-type {
-    top: 50%;
+    top: 35%;
     right: -2%
+
   }
+
 
 }
 
@@ -274,15 +250,6 @@ h1+p {
   h2 {
     font-size: 1.8rem;
     font-weight: 700;
-  }
-
-  svg {
-    position: absolute;
-    left: -50px;
-    width: 80%;
-    margin: 0 auto;
-    z-index: 1;
-    margin-top: -40px;
   }
 }
 
@@ -545,4 +512,19 @@ footer a {
   .toTop {
     display: none;
   }
+}
+
+
+.underlined-text {
+  position: relative;
+  z-index: 3;
+  white-space: nowrap;
+}
+
+.underlined-text svg{
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  z-index: -1;
 }
