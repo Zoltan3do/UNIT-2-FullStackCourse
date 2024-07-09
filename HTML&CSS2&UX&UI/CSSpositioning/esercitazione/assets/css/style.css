@@ -36,17 +36,19 @@ footer span:nth-of-type(2) {
   right: -3%
 }
 
-footer span:last-of-type {
+footer i {
   color: #F65A5D;
   display: block;
   position: absolute;
   bottom: -3%;
-  right: -3%
+  right: -2%;
+  font-size: 2em !important;
+  
 }
 
 footer span:first-of-type,
 footer span:nth-of-type(2),
-footer span:last-of-type {
+footer i {
   border: 2px solid white;
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(2px);
@@ -95,6 +97,20 @@ header {
 }
 
 @media screen and (min-width: 1200px) {
+
+  footer .material-symbols-outlined:last-of-type {
+    right: -2%
+  }
+
+  header .material-symbols-outlined:last-of-type,
+  header .material-symbols-outlined:first-of-type {
+    right:-2%;
+    font-size: 1.5em;
+  }
+
+  header .material-symbols-outlined:last-of-type{
+    top:66%
+  }
 
   header {
     text-align: left;
@@ -179,16 +195,14 @@ main {
 
   }
 
-  header span:first-of-type{
+  header span:first-of-type {
     top: 0;
     right: -2%
-
   }
 
   header span:last-of-type {
     top: 35%;
     right: -2%
-
   }
 
 
@@ -277,6 +291,7 @@ h1+p {
 }
 
 @media screen and (min-width: 1200px) {
+
   body {
     line-height: 2;
   }
@@ -521,7 +536,7 @@ footer a {
   white-space: nowrap;
 }
 
-.underlined-text svg{
+.underlined-text svg {
   position: absolute;
   bottom: -15px;
   left: 0;
