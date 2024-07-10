@@ -3,6 +3,19 @@ codepen.io/enxaneta/full/adLPwv
 
 flex-grow: [1-2-3-4-5] -> dispone lo spazio rimanente nella main axes ai singoli elementi.
 
-flex-shrink: [1-2-3-4-5] -> più è alto e più quell'elemento cede il suo spazio agli altri flex children.
+flex-shrink: [1-2-3-4-5] -> più il valore è alto e più quell'elemento cede il suo spazio agli altri flex children nella main axes.
+
+flex-flow: direction + wrap.
 
 order -> funziona come z-index.
+
+flex-basis: percentuale -> definisce quanta percentuale dello spazio delc container sulla main axes deve occupare.
+
+
+DEFAULT VALUES:
+- flex-direction: row;
+- justify-content: flex-start;
+- align-items: strech; -> (asse cross) -> solo se hanno height: auto;
+
+
+
