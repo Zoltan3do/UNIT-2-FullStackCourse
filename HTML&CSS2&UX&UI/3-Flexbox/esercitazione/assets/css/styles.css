@@ -296,15 +296,19 @@ nav ul li {
 @media screen and (min-width:768px)  {
     body{
         display: flex;
-        justify-content: flex-start;
     }
 
-    main,
-    aside {
+    header{
+        width: 15%;
+        position: fixed;
+    }
+
+    main{
         width: 100%;
         margin: 0 10px;
         margin-bottom: 25px;
         margin-top: 25px;
+        margin-left: 16%;
     }
 
     ul {
@@ -317,7 +321,7 @@ nav ul li {
         padding: 10%;
         height: 100vh;
         position: sticky;
-        width: 40%;
+        width: 100%;
     }
 
     li img {
@@ -376,13 +380,18 @@ nav ul li {
         text-align: center;
     }
 
+    .text{
+        text-align: left;
+        width: 80%;
+    }
+
     .text p:first-of-type {
-        font-size: 0.6em;
+        font-size: 0.75em;
         font-weight: 600;
     }
 
     .text p:last-of-type {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     .price {
@@ -423,11 +432,12 @@ nav ul li {
         border-radius: 30px;
         display: flex;
         flex-direction: row-reverse;
-        
+        align-items: flex-start;
+        gap: 20px;
     }
 
     .last p {
-        font-size: 0.9em;
+        font-size: 0.8em;
         line-height: 1.2;
         margin-bottom: 20px;
     }
