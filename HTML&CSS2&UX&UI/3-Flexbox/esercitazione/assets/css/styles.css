@@ -145,9 +145,7 @@ nav ul li {
 
 
 
-
-
-@media screen and (min-width:577px) {
+@media screen and (min-width:577px) and (max-width:767px) {
 
     main,
     aside {
@@ -186,7 +184,6 @@ nav ul li {
 
     /*order*/
     li:nth-of-type(1) {
-        order: 3;
         text-align: center;
         font-size: 150%;
         font-weight: 700;
@@ -199,20 +196,13 @@ nav ul li {
     }
 
     li:nth-of-type(2) {
-        order: 1;
+        order: -1;
     }
 
     li:nth-of-type(3) {
-        order: 2;
+        order: -1;
     }
 
-    li:nth-of-type(4) {
-        order: 4;
-    }
-
-    li:nth-of-type(5) {
-        order: 5;
-    }
 
     h1 {
         font-size: 240%;
@@ -303,7 +293,151 @@ nav ul li {
 
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px)  {
+    body{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    main,
+    aside {
+        width: 100%;
+        margin: 0 10px;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: #FEF7E2;
+        justify-content: flex-start;
+        gap:20px;
+        padding: 10%;
+        height: 100vh;
+        position: sticky;
+        width: 40%;
+    }
+
+    li img {
+        vertical-align: middle;
+        margin-right: 10%;
+    }
+
+    /*order*/
+    li {
+        text-align: center;
+        font-size: 120%;
+        font-weight: 700;
+        border-radius: 50px;
+        width: 20%;
+        background-color: #FFDF7F;
+        padding: 4% 0.2%;
+        width: 100%;
+    }
+
+    li:not(:first-of-type){
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 220%;
+        line-height: 1;
+        font-weight: 900;
+        margin-bottom: 5%;
+        margin-left: 0;
+    }
+
+    .bio-card-container {
+        display: flex;
+        justify-content: space-between;
+        gap:20px
+    }
+
+    .bio-honey-card {
+        border-radius: 20px;
+        margin-bottom: 30px;
+        background-color: #FEF7E2;
+        overflow: hidden;
+        width: 45%;
+    }
+
+    .bio-honey-card img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .text-container {
+        display: flex;
+        gap: 30%;
+        padding: 10px 12px;
+        margin:5px 2px;
+        text-align: center;
+    }
+
+    .text p:first-of-type {
+        font-size: 0.6em;
+        font-weight: 600;
+    }
+
+    .text p:last-of-type {
+        font-size: 0.8em;
+    }
+
+    .price {
+        margin-top: 3%;
+        font-size: 0.9em;
+        margin-bottom: 5%;
+    }
+
+    main button {
+        background-color: #FFDF7F;
+        border: none;
+        text-align: center;
+        width: 65%;
+        margin: 0 auto;
+        font-size: 0.7em;
+        padding: 3.5px;
+        border-radius: 20px;
+        font-weight: 600;
+        margin-left: 20%;
+        margin-bottom: 5%
+    }
+
+    h2 {
+        font-weight: 800;
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 1.4em;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+
+    .last {
+        background-color: #FEF7E2;
+        padding: 30px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+
+    .last p {
+        font-size: 0.9em;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .last img {
+        width: 50%;
+    }
+
+
+
 
 
 }
