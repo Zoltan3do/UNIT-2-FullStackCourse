@@ -9,8 +9,55 @@
 */
 
 
-p{
-    border:1px solid #666666;
-    width:60%;
-    
+p {
+    border: 3px solid #666666;
+    width: 50%;
+    margin: 50px auto;
+    line-height: 1.4;
+    padding: 20px;
+    font-weight: 550;
+    font-size: 1.2em;
+}
+
+i {
+    color: #6C899C;
+    display: inline-block;
+    opacity: 0;
+    animation: movement 9s 0s infinite;
+}
+
+i:nth-of-type(1) {
+    animation-delay: 0;
+}
+
+i:nth-of-type(2) {
+    translate: -120px;
+    animation-delay: 3s;
+}
+
+i:nth-of-type(3) {
+    translate: -250px;
+    animation-delay: 6s;
+}
+
+@keyframes movement {
+
+    0%,
+    8% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    11%,
+    33% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+    36%,
+    100% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
 }
