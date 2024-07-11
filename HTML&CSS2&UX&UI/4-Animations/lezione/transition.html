@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: orangered;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+
+        .box-1 {
+            color: white;
+            /* La transition si applica allo stato normale dell'elemento */
+            /* La sintassi è questa */
+            /* transition: proprietà durata curva-di-accelerazione(personalizzabile con [cubic-bezier]) ritardo */
+            transition: transform 3s ease-in-out 0s, background-color 1s linear 0s;
+        }
+
+        .box-1:hover {
+            /* Applicando la transition sull'hover ed applicandola al contrario (quindi in entrata sull'hover) si possono rendere diverse le transizioni in entrata e uscita diverse */
+            transform: rotate(360deg);
+            background-color: crimson;
+            transition: transform 1s ease-in-out 0s, background-color 1s linear 0s;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>CSS TRANSITIONS</h1>
+        <p>Una transition è una "transizione" tra due valori di una proprietà CSS (o tra più proprietà CSS).
+            La possiamo interpretare come un rallentamento nell'applicatione di una proprietà CSS.
+            E' possibile "rallentare" anche l'applicazione di più proprietà CSS insieme.
+            L'effetto di transizione solitamente viene associato all'evento di hover (al posizionamento del cursore
+            sopra un elemento HTML).
+        </p>
+
+        <h2>BOX CHE SI MODIFICA ON HOVER</h2>
+        <div class="box box-1">BOX 1</div>
+
+    </main>
+
+</body>
+
+</html>
