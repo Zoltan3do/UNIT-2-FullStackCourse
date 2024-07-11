@@ -26,6 +26,7 @@ body {
 
 .task:hover {
     transform: scale(1.2)!important;
+    box-shadow: 8px 10px 12px 5px #3B3B3B;
     z-index: 1;
 }
 
@@ -62,12 +63,10 @@ p {
 
 @keyframes attach {
     0% {
-        transform: translateY(-100vh);
-        opacity: 0;
+        scale: 2;
     }
 
     100% {
-        transform: translateY(0);
         opacity: 1;
     }
 }
