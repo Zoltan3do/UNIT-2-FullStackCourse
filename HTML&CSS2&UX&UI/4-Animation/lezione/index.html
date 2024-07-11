@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            margin: 20px
+        }
+
+        /* Ruota l'elemento sulle 2 assi cartesiane*/
+        .rotate {
+            background-color: greenyellow;
+            transform: rotate(45deg);
+            box-shadow: 5px 5px 10px 3px rgb(255, 0, 0, 0.5);
+        }
+
+        /* Deforma l'elemento sulle due assi cartesiane*/
+        .skew {
+            background-color: cadetblue;
+            transform: skew(5deg, 10deg);
+        }
+
+        /* Scala l'elemento */
+        .scale {
+            background-color: darkorange;
+            transform: scale(1.15);
+        }
+
+        /* Sposta l'elemento sulle due assi cartesiane */
+        .translate {
+            background-color: goldenrod;
+            transform: translate(50px, 20px);
+        }
+
+        /* Usa più proprietà transform */
+        .transrotate {
+            background-color: darkcyan;
+            transform: translate(50px, 50px) rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Proprietà transform</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia voluptatem dolores, delectus ratione
+            repellat rerum ipsam explicabo, reprehenderit dolorem saepe nulla hic, ex vitae error ea fuga iure velit
+            temporibus?</p>
+        <h3>Transform rotate</h3>
+        <div class="box rotate">
+            <div>ROTATE</div>
+        </div>
+
+        <br><br>
+        <hr>
+
+        <h3>Transform skew</h3>
+        <div class="box skew">
+            <div>SKEW</div>
+        </div>
+
+        <br><br>
+        <hr>
+
+        <h3>Transform scale</h3>
+        <div class="box scale">
+            <div>SCALE</div>
+        </div>
+
+        <br><br>
+        <hr>
+
+        <h3>Transform translate</h3>
+        <div class="box translate">
+            <div>TRANSLATE</div>
+        </div>
+
+
+        <h3>Transform translate & rotate</h3>
+        <div class="box transrotate">
+            <div>TRANSROTATE</div>
+        </div>
+    </main>
+
+</body>
+
+</html>
