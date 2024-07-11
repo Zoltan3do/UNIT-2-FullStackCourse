@@ -29,6 +29,17 @@
             animation: boxTranslation 4s linear 0s infinite;
         }
 
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            background-color: burlywood;
+            box-shadow: 5px 3px 3px 1px black;
+        }
+
         @keyframes boxAnimation {
             0% {
                 background-color: blue;
@@ -90,9 +101,15 @@
         <div class="box box-animated"></div>
         <div class="box box-translate"></div>
         <div class="box"></div>
-        <button onclick="animation()">GO</button>
+        <div class="button-container">
+            <button onclick="animation()">GO</button>
+        </div>
+
         <script>
-            const animation = () => document.querySelectorAll(".box")[2].classList.toggle("box-moving");
+            const animation = () => {
+                document.querySelectorAll(".box")[2].classList.toggle("box-moving");
+                document.querySelectorAll("button")[0].textContent = document.querySelectorAll("button")[0].textContent == "GO" ? "Stop" : "GO";
+            }
         </script>
     </MAIN>
 </body>
