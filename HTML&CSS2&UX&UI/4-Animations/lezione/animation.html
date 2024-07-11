@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATIONS</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: cadetblue
+        }
+
+        .box-moving {
+            background-color: mediumaquamarine;
+            animation: crazYanimation 3s linear 0s infinite forwards;
+        }
+
+        .box-animated {
+            color: white;
+            /* animation: nome durata curva-di accelerazione ritardo numero-di-iterazioni stato-di-permanenza*/
+            animation: boxAnimation 3s linear 0s infinite forwards;
+        }
+
+        .box-translate {
+            background-color: red;
+            color: white;
+            animation: boxTranslation 4s linear 0s infinite;
+        }
+
+        @keyframes boxAnimation {
+            0% {
+                background-color: blue;
+            }
+
+            50% {
+                background-color: red;
+            }
+
+            100% {
+                background-color: violet;
+            }
+        }
+
+
+        @keyframes boxTranslation {
+            0% {
+                transform: translate(0px);
+            }
+
+            30% {
+                transform: translate(500px);
+            }
+
+            100% {
+                transform: translate(0px);
+            }
+        }
+
+        @keyframes crazYanimation {
+            0% {
+                transform: translate(80px) rotate(0deg);
+                background-color: mediumaquamarine;
+            }
+
+            50% {
+                transform: translate(300px) rotate(800deg);
+                background-color: rgb(62, 10, 111);
+            }
+
+            100% {
+                transform: translate(80px) rotate(0deg);
+                background-color: mediumaquamarine;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <MAIN>
+        <h1>ANIMAZIONI IN CSS</h1>
+        <p>Le animazioni in CSS ( proprietà "animation") permettono un controllo molto più granulare dello scorrere
+            dell'animazione rispetto ad una semplice transizione e consentono di collegare un'animazione ad un elemtno
+            senza necessariamente dover sfruutare lo stato di hober; è possiblie infdatti collegare un'animazione ad un
+            elemento all'avvio della pagina, programmaticamente alla pressione di un vottone , etc. queso è possiblie
+            graize al fatto che cllegheremo l'animazione ad un aclasse css dedicata, e che quindi sarà possibile
+            condizionare la sua aplicazione treamite javascript.</p>
+        <div class="box box-animated"></div>
+        <div class="box box-translate"></div>
+        <div class="box"></div>
+        <button onclick="animation()">GO</button>
+        <script>
+            const animation = () => {
+                document.querySelectorAll(".box")[2].classList.toggle("box-moving");
+            }
+        </script>
+    </MAIN>
+</body>
+
+</html>
