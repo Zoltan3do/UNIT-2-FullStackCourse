@@ -43,7 +43,7 @@ i:nth-of-type(3) {
 @keyframes movement {
 
     0%,
-    8% {
+    10% {
         opacity: 0;
         transform: translateY(-50px);
     }
@@ -54,8 +54,7 @@ i:nth-of-type(3) {
         transform: translateY(0);
     }
 
-
-    36%,
+    34%,
     100% {
         opacity: 0;
         transform: translateY(-50px);
