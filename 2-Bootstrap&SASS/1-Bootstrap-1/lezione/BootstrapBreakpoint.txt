@@ -1,0 +1,8 @@
+Spaziatura (margin-padding)
+Visibilità
+Allineamento del testo
+Display flex
+Allineamento flexbox
+Classi di overflow
+Classi di posizionamento
+Layout grid
