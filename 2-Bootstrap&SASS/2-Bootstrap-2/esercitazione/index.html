@@ -183,7 +183,8 @@
                             necessitatibus nobis? Mollitia?</p>
                         <button type="button" class="btn btn-info text-dark w-50 p-0 ms-2 mb-3">Prenota
                             ora</button>
-                            <span class="position-absolute top-0 start-100 translate-middle-x badge rounded-pill bg-danger">HOT</span>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle-x badge rounded-pill bg-danger">HOT</span>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-6" id="sez2">
@@ -197,7 +198,8 @@
                             necessitatibus nobis? Mollitia?</p>
                         <button type="button" class="btn btn-info text-dark w-50 p-0 ms-2 mb-3">Prenota
                             ora</button>
-                            <span class="position-absolute top-0 start-100 translate-middle-x badge rounded-pill bg-danger">HOT</span>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle-x badge rounded-pill bg-danger">HOT</span>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-6" id="sez2">
@@ -211,7 +213,8 @@
                             necessitatibus nobis? Mollitia?</p>
                         <button type="button" class="btn btn-info text-dark w-50 p-0 ms-2 mb-3">Prenota
                             ora</button>
-                            <span class="position-absolute top-0 start-100 translate-middle-x badge rounded-pill bg-danger">HOT</span>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle-x badge rounded-pill bg-danger">HOT</span>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-6" id="sez2">
@@ -225,7 +228,8 @@
                             necessitatibus nobis? Mollitia?</p>
                         <button type="button" class="btn btn-info text-dark w-50 p-0 ms-2 mb-3">Prenota
                             ora</button>
-                            <span class="position-absolute top-0 start-100 translate-middle-x badge rounded-pill bg-danger">HOT</span>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle-x badge rounded-pill bg-danger">HOT</span>
                     </div>
                 </div>
 
@@ -240,7 +244,8 @@
                             necessitatibus nobis? Mollitia?</p>
                         <button type="button" class="btn btn-info text-dark w-50 p-0 ms-2 mb-3">Prenota
                             ora</button>
-                            <span class="position-absolute top-0 start-100 translate-middle-x badge rounded-pill bg-danger">HOT</span>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle-x badge rounded-pill bg-danger">HOT</span>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-6" id="sez2">
@@ -254,7 +259,8 @@
                             necessitatibus nobis? Mollitia?</p>
                         <button type="button" class="btn btn-info text-dark w-50 p-0 ms-2 mb-3">Prenota
                             ora</button>
-                            <span class="position-absolute top-0 start-100 translate-middle-x badge rounded-pill bg-danger">HOT</span>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle-x badge rounded-pill bg-danger">HOT</span>
                     </div>
                 </div>
             </div>
@@ -267,7 +273,7 @@
 
 
 
-        <div class="container offerta mb-5">
+        <div class="container offerta mb-5 d-none d-sm-flex">
             <div class="row mt-5 gx-5 gy-3">
                 <div class="col-12 fs-5 fw-semibold mb-0">
                     <p class="fs-5">Offerta del giorno</p>
@@ -390,7 +396,34 @@
 
 
     <footer class="bg-dark container-fluid h-25 d-flex justify-content-center align-items-center flex-column p-5">
-        <button type="button" class="btn btn-outline-secondary">Contattaci</button>
+        <button type="button" class="btn btn-outline-secondary " data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo">Contattaci</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Messaggio</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Email:</label>
+                                <input type="email" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Messaggio:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                        <button type="button" class="btn btn-primary">Invia messaggio</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <p class="text-light fs-6 mt-3">©<span>2021</span> Kalina Travel LTD. All Rights Reserved.</p>
 
     </footer>
