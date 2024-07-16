@@ -1,15 +1,284 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <header>
-        
+    <title>Eveline-R</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .w-ds-logo {
+            width: 5%;
+        }
+
+        .fs-ds-search {
+            font-size: 0.9em !important;
+        }
+
+
+        @media screen and (min-width:768px) {
+            .saldi p {
+                font-size: 0.9em !important;
+            }
+
+        }
+
+
+        @media screen and (max-width:900px) {
+            .hero h1:not(:first-of-type) {
+                font-size: 4em;
+                text-align: center !important;
+                justify-content: center;
+            }
+
+            header img {
+                width: 20% !important;
+            }
+
+            .hero p {
+                font-size: 1.3em !important
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5">
+            <div class="container">
+                <img src="assets/img/logo.png" class="w-ds-logo me-3" />
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Saldi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Welcome Summer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Last Minute</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recensioni</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-5 h-25" type="search" placeholder="Cerca Posti da sogno"
+                            aria-label="Search">
+                        <button class="btn btn-outline-danger fs-ds-search" type="button">Cerca</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+    <!-------------------------------------------------------------------------->
+    <main>
+        <div class="hero container d-flex flex-column align-items-center align-items-lg-start">
+            <h1
+                class="fw-light text-secondary border border-top-0 border-start-0 border-end-0 border-secondary d-flex align-items-center pb-3">
+                Eveline-R-<span class="fs-6">Feel the Freedom</span></h1>
+            <p class="text-secondary fs-6">Scopri le destinazioni più calde del momento!</p>
+            <button type="button" class="btn btn-info mt-3 text-light fw-semibold w-20 px-4">Prenota ora</button>
+        </div>
+
+        <div class="container saldi">
+            <div class="row mt-5 gx-5 gy-3">
+                <div class="col-12 fs-4 fw-semibold mb-0 d-flex justify-content-between">
+                    <p class="fs-5">Saldi</p>
+                    <p class="text-info fs-5">Nascondi sezione</p>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card border border-info border-2 rounded p-0 h-100">
+                        <img src="assets/img/booking.jpg" alt="booking" class="w-100">
+                        <h6 class="mt-2 ms-2 fw-bold">Titolo</h6>
+                        <p class="p-2 pt-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, unde!
+                            Autem
+                            quae rem natus
+                            voluptatibus? Et, ea odio! Ipsum nemo dolore vitae quaerat laborum consequuntur totam, eos
+                            necessitatibus nobis? Mollitia?</p>
+                        <button type="button" class="btn btn-info text-dark w-50 p-0 ms-2 mb-3">Prenota
+                            ora</button>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card border border-info border-2 rounded p-0 h-100">
+                        <img src="assets/img/booking.jpg" alt="booking" class="w-100">
+                        <h6 class="mt-2 ms-2 fw-bold">Titolo</h6>
+                        <p class="p-2 pt-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, unde!
+                            Autem
+                            quae rem natus
+                            voluptatibus? Et, ea odio! Ipsum nemo dolore vitae quaerat laborum consequuntur totam, eos
+                            necessitatibus nobis? Mollitia?</p>
+                        <button type="button" class="btn btn-info text-dark w-50 p-0 ms-2 mb-3">Prenota
+                            ora</button>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card border border-info border-2 rounded p-0 h-100">
+                        <img src="assets/img/booking.jpg" alt="booking" class="w-100">
+                        <h6 class="mt-2 ms-2 fw-bold">Titolo</h6>
+                        <p class="p-2 pt-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, unde!
+                            Autem
+                            quae rem natus
+                            voluptatibus? Et, ea odio! Ipsum nemo dolore vitae quaerat laborum consequuntur totam, eos
+                            necessitatibus nobis? Mollitia?</p>
+                        <button type="button" class="btn btn-info text-dark w-50 p-0 ms-2 mb-3">Prenota
+                            ora</button>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 d-md-none d-lg-block">
+                    <div class="card border border-info border-2 rounded p-0 h-100">
+                        <img src="assets/img/booking.jpg" alt="booking" class="w-100">
+                        <h6 class="mt-2 ms-2 fw-bold">Titolo</h6>
+                        <p class="p-2 pt-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, unde!
+                            Autem
+                            quae rem natus
+                            voluptatibus? Et, ea odio! Ipsum nemo dolore vitae quaerat laborum consequuntur totam, eos
+                            necessitatibus nobis? Mollitia?</p>
+                        <button type="button" class="btn btn-info text-dark w-50 p-0 ms-2 mb-3">Prenota
+                            ora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="container summer mt-5 mb-5">
+            <div class="row gx-5 gy-3">
+                <div class="col-12 fs-5 fw-semibold mb-0 d-flex justify-content-between">
+                    <p class="fs-5">Welcome Summer</p>
+                    <p class="text-info fs-5">Nascondi sezione</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6">
+                    <div class="card rounded p-0 h-100" style="box-shadow: 10px 10px 13px 10px #E3E3E3;">
+                        <img src="assets/img/booking.jpg" alt="booking" class="w-100">
+                        <h6 class="mt-2 ms-2 fw-bold">Titolo</h6>
+                        <p class="p-2 pt-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, unde!
+                            Autem
+                            quae rem natus
+                            voluptatibus? Et, ea odio! Ipsum nemo dolore vitae quaerat laborum consequuntur totam, eos
+                            necessitatibus nobis? Mollitia?</p>
+                        <button type="button" class="btn btn-info text-dark w-50 p-0 ms-2 mb-3">Prenota
+                            ora</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6">
+                    <div class="card rounded p-0 h-100" style="box-shadow: 10px 10px 13px 10px #E3E3E3;">
+                        <img src="assets/img/booking.jpg" alt="booking" class="w-100">
+                        <h6 class="mt-2 ms-2 fw-bold">Titolo</h6>
+                        <p class="p-2 pt-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, unde!
+                            Autem
+                            quae rem natus
+                            voluptatibus? Et, ea odio! Ipsum nemo dolore vitae quaerat laborum consequuntur totam, eos
+                            necessitatibus nobis? Mollitia?</p>
+                        <button type="button" class="btn btn-info text-dark w-50 p-0 ms-2 mb-3">Prenota
+                            ora</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6">
+                    <div class="card rounded p-0 h-100" style="box-shadow: 10px 10px 13px 10px #E3E3E3;">
+                        <img src="assets/img/booking.jpg" alt="booking" class="w-100">
+                        <h6 class="mt-2 ms-2 fw-bold">Titolo</h6>
+                        <p class="p-2 pt-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, unde!
+                            Autem
+                            quae rem natus
+                            voluptatibus? Et, ea odio! Ipsum nemo dolore vitae quaerat laborum consequuntur totam, eos
+                            necessitatibus nobis? Mollitia?</p>
+                        <button type="button" class="btn btn-info text-dark w-50 p-0 ms-2 mb-3">Prenota
+                            ora</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6">
+                    <div class="card rounded p-0 h-100" style="box-shadow: 10px 10px 13px 10px #E3E3E3;">
+                        <img src="assets/img/booking.jpg" alt="booking" class="w-100">
+                        <h6 class="mt-2 ms-2 fw-bold">Titolo</h6>
+                        <p class="p-2 pt-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, unde!
+                            Autem
+                            quae rem natus
+                            voluptatibus? Et, ea odio! Ipsum nemo dolore vitae quaerat laborum consequuntur totam, eos
+                            necessitatibus nobis? Mollitia?</p>
+                        <button type="button" class="btn btn-info text-dark w-50 p-0 ms-2 mb-3">Prenota
+                            ora</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-6">
+                    <div class="card rounded p-0 h-100" style="box-shadow: 10px 10px 13px 10px #E3E3E3;">
+                        <img src="assets/img/booking.jpg" alt="booking" class="w-100">
+                        <h6 class="mt-2 ms-2 fw-bold">Titolo</h6>
+                        <p class="p-2 pt-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, unde!
+                            Autem
+                            quae rem natus
+                            voluptatibus? Et, ea odio! Ipsum nemo dolore vitae quaerat laborum consequuntur totam, eos
+                            necessitatibus nobis? Mollitia?</p>
+                        <button type="button" class="btn btn-info text-dark w-50 p-0 ms-2 mb-3">Prenota
+                            ora</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6">
+                    <div class="card rounded p-0 h-100" style="box-shadow: 10px 10px 13px 10px #E3E3E3;">
+                        <img src="assets/img/booking.jpg" alt="booking" class="w-100">
+                        <h6 class="mt-2 ms-2 fw-bold">Titolo</h6>
+                        <p class="p-2 pt-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, unde!
+                            Autem
+                            quae rem natus
+                            voluptatibus? Et, ea odio! Ipsum nemo dolore vitae quaerat laborum consequuntur totam, eos
+                            necessitatibus nobis? Mollitia?</p>
+                        <button type="button" class="btn btn-info text-dark w-50 p-0 ms-2 mb-3">Prenota
+                            ora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container saldi mb-5">
+            <div class="row mt-5 gx-5 gy-3">
+                <div class="col-12 fs-5 fw-semibold mb-0">
+                    <p class="fs-5">Offerta del giorno</p>
+                    <div class="col-6 col-lg-8">
+                        <div class="card w-100 h-75">
+                            <img src="assets/img/booking.jpg" alt="booking" class="w-100">
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="card w-50">
+                            <h1>Fushifaru Maldives</h1>
+                            <p>15.01.2021-31.01.2021</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
