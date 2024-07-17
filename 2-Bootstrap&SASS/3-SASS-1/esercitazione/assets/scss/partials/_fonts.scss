@@ -29,4 +29,6 @@ body {
 
 h1 {
     @include alfonz("size");
+    font-weight: 900;
+    line-height: 1;
 }
