@@ -1,0 +1,14 @@
+$bottoni: (
+    but1:$bottone1,
+    but2:$bottone2,
+    but3:$bottone3
+);
+
+
+@each $nome, $value in $bottoni {
+    .#{$nome}-color {
+        background-color: $value;
+        color: $text-color
+    }
+}
+

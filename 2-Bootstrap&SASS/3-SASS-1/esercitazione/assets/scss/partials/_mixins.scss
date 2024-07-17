@@ -1,0 +1,40 @@
+@mixin floating () {
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px #000000;
+    border: 1px solid white;
+}
+
+.principal-hero-img {
+    @include floating();
+}
+
+.secondary-hero-img {
+    @include floating();
+    box-shadow: 2px 2px 10px 2px black;
+    border: none;
+}
+
+@mixin grid ($elements-number) {
+    .d-flex-grid {
+        display: flex;
+        flex-wrap: wrap;
+
+        .item {
+            width: calc(100% / $elements-number);
+            border-radius: 20px;
+
+            .img-container {
+                overflow: hidden;
+                width: 90%;
+                margin: 0 auto;
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@include grid(4);

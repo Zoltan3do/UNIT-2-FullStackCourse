@@ -1,0 +1,21 @@
+$text-color: #f4f4f4;
+$title-color: #28064F;
+$bg-hero: #640fc5;
+$bottone1 :#0e6eff;
+$bottone2 :#ff8700;
+$bottone3 :#4caf50;
+
+* {
+    color: $text-color;
+}
+
+
+.hero,
+header {
+    background-color: $bg-hero;
+}
+
+
+h1 {
+    color: $title-color
+}

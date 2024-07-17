@@ -1,0 +1,18 @@
+@mixin anim($durata, $start, $end, $ritardo, $nome) {
+    @keyframes #{$nome} {
+        0% {
+            opacity: 0;
+            transform: translateY($start);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY($end);
+        }
+    }
+
+    .fade-in-#{$nome} {
+        transform: translateY($start);
+        animation: $nome $ritardo forwards;
+    }
+}

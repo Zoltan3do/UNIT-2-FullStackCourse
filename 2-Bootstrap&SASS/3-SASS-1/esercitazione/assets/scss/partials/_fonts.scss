@@ -1,0 +1,31 @@
+$font-fam: "Arial";
+
+$fonzies: (
+    sm:12px,
+    md:16px,
+    lg:20px,
+    xl:24px,
+    xxl:36px
+);
+
+
+body {
+    font-family: $font-fam
+}
+
+
+@each $name, $value in $fonzies {
+    .font-#{$name} {
+        font-size: $value
+    }
+}
+
+
+@mixin alfonz ($property) {
+    font-#{$property}: map-get($fonzies, xxl)
+}
+
+
+h1 {
+    @include alfonz("size");
+}
