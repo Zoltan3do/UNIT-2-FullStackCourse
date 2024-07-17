@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: block;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+nav ul li {
+  font-size: 0.8em;
+}
+@media screen and (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+  }
+}
+
+.buttons .primary {
+  color: white;
+  background-color: red;
+}
+.buttons .primary:hover {
+  background-color: purple;
+}
+.buttons .primary:visited, .buttons .primary:focus {
+  background-color: violet;
+}
+
+p.first {
+  font-size: 1.1em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+h2 {
+  margin: 35px;
+  border: 35px solid black;
+}
+
+h3 {
+  color: chocolate;
+  border: 35px solid black;
+  margin-left: 35px;
+  padding: 10px;
+}
+
+.netFlix-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: red;
+}
+@media screen and (min-width: 768px) {
+  .netFlix-navbar {
+    flex-direction: column;
+  }
+}
+
+.spotify-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: green;
+}
+@media screen and (min-width: 768px) {
+  .spotify-navbar {
+    flex-direction: column;
+  }
+}
+
+.myclass1 {
+  font-weight: 100;
+}
+
+.myclass2 {
+  font-size: 5rem;
+}
+
+.pippo-10px {
+  margin: 10px;
+}
+
+.pippo-14px {
+  margin: 14px;
+}
+
+.ciao-18px {
+  margin: 18px;
+}
+
+.margin-xs {
+  margin: 0 10px;
+}
+
+.margin-sm {
+  margin: 0 12px;
+}
+
+.margin-medium {
+  margin: 0 16px;
+}
+
+.margin-lg {
+  margin: 0 20px;
+}
+
+.margin-xl {
+  margin: 0 28px;
+}/*# sourceMappingURL=app.css.map */

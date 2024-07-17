@@ -1,0 +1,8 @@
+$names: "primary", "secondary";
+
+
+@each $name in $names {
+    .button-#{$name} {
+        background-color:"$#{$name}";
+    }
+}

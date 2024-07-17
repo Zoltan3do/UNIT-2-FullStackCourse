@@ -1,0 +1,10 @@
+Il sass è un preprocessore css che rende la sintassi più pulita e più potente.
+
+Le estensioni del codice sass sono .scss e .sass .
+
+L'estensione di vs-code per precompilare il codice sass in tempo reale è Live Sass Compiler di Glenn Marks.
+
+
+
+
+

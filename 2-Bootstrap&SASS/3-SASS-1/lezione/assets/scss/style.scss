@@ -1,0 +1,4 @@
+// Questo file serve solo a raggruppare dei blocchi di stile definiti in file più piccoli, detti "partials", che vivono nella cartella omonima.
+
+@import "partials/colors"; // non ci vuole l'url method, nè l'underscore prima, ne l'estensione.
+@import "partials/buttons";
