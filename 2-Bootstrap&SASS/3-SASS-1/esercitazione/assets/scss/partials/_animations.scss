@@ -16,3 +16,8 @@
         animation: $nome $ritardo forwards;
     }
 }
+
+@include anim(10s,-500px,0,0.5s,ciao1);
+@include anim(10s,-500px,0,1s,ciao2);
+@include anim(10s,-500px,0,2s,ciao3);
+@include anim(10s,-500px,0,3s,ciao4);

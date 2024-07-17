@@ -10,7 +10,13 @@ $bottoni: (
         background-color: $value;
         color: $text-color;
         border-radius: 20px;
+        &:hover{
+            cursor: pointer;
+            
+        }
     }
 }
+
+
 
 

@@ -40,17 +40,26 @@ h1 {
   color: #f4f4f4;
   border-radius: 20px;
 }
+.but1-color:hover {
+  cursor: pointer;
+}
 
 .but2-color {
   background-color: #ff8700;
   color: #f4f4f4;
   border-radius: 20px;
 }
+.but2-color:hover {
+  cursor: pointer;
+}
 
 .but3-color {
   background-color: #4caf50;
   color: #f4f4f4;
   border-radius: 20px;
+}
+.but3-color:hover {
+  cursor: pointer;
 }
 
 body {
@@ -274,4 +283,64 @@ h1 {
 
 .hero-left {
   width: 30%;
+}
+
+@keyframes ciao1 {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-ciao1 {
+  transform: translateY(-500px);
+  animation: ciao1 0.5s forwards;
+}
+
+@keyframes ciao2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-ciao2 {
+  transform: translateY(-500px);
+  animation: ciao2 1s forwards;
+}
+
+@keyframes ciao3 {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-ciao3 {
+  transform: translateY(-500px);
+  animation: ciao3 2s forwards;
+}
+
+@keyframes ciao4 {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-ciao4 {
+  transform: translateY(-500px);
+  animation: ciao4 3s forwards;
 }/*# sourceMappingURL=style.css.map */
