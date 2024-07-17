@@ -6,6 +6,7 @@
 
 .principal-hero-img {
     @include floating();
+    margin-bottom: -5%;
 }
 
 .secondary-hero-img {
