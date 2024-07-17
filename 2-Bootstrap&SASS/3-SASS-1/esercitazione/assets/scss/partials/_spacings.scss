@@ -12,7 +12,7 @@ $spaziature: (
         .#{$proprieta}-block-#{$size} {
             #{$proprieta}-top: $value;
             #{$proprieta}-bottom: $value;
-        }
+        };
 
         .#{$proprieta}-inline-#{$size} {
             #{$proprieta}-left: $value;
@@ -33,10 +33,30 @@ $spaziature: (
     display: flex
 }
 
-.j-content{
+.j-content-between{
+    justify-content: space-between;
+}
+
+.j-content-evenly{
+    justify-content: space-evenly;
+}
+
+.j-content-around{
     justify-content: space-around;
+}
+
+.a-items-center{
+    align-items: center
+}
+
+.gap-sm{
+    gap: 10px;
 }
 
 @include generazione-classi("margin");
 @include generazione-classi("padding");
+
+.hero-left{
+    width:30%;
+}
 

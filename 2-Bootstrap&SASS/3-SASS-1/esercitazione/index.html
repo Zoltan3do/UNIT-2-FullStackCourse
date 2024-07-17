@@ -10,9 +10,9 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><img src="assets/scss/img/logo.png" alt="logo"></li>
+        <nav class="d-flex j-content-around a-items-center font -sm">
+            <img src="assets/scss/img/logo.png" alt="logo" width="5%">
+            <ul class="d-flex j-content-between gap-sm">
                 <li>Home</li>
                 <li>About</li>
                 <li>Servizi</li>
@@ -20,14 +20,43 @@
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <h1>I PNG NON FUNZIONANO</h1>
-            <button class="but1-color" type="button">Scopri di più</button>
-            <button class="but2-color" type="button">Accedi</button>
-            <button class="but3-color" type="button">Contattaci</button>
-            <img src="https://www.placedog.net/500" alt="dogo">
+        <section class="hero d-flex j-content-around padding-block-xxl">
+            <div class="hero-left">
+                <h1 class="font-xxxl margin-block-sm">I PNG NON FUNZIONANO</h1>
+                <p class="font-md margin-block-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione exercitationem dignissimos aspernatur sapiente corporis pariatur dolorum labore nisi vitae recusandae, architecto sed praesentium, molestias voluptates consequuntur consequatur, tempore officiis!</p>
+                <div>
+                    <button class="but1-color font-md padding-block-sm  padding-inline-sm " type="button">Scopri di più</button>
+                    <button class="but2-color font-md padding-block-sm  padding-inline-sm" type="button">Accedi</button>
+                    <button class="but3-color font-md padding-block-sm  padding-inline-sm"  type="button">Contattaci</button>
+                </div>
+            </div>
+
+            <img src="https://www.placedog.net/300" alt="dogo" class="principal-hero-img">
         </section>
     </main>
+    <aside class="d-flex-grid margin-block-xl margin-inline-md">
+        <div class="item">
+            <div class="img-container">
+                <img src="https://www.placedog.net/300" alt="dogo" class="principal-hero-img">
+            </div>
+        </div>
+        <div class="item">
+            <div class="img-container">
+                <img src="https://www.placedog.net/300" alt="dogo" class="principal-hero-img">
+            </div>
+        </div>
+        <div class="item">
+            <div class="img-container">
+                <img src="https://www.placedog.net/300" alt="dogo" class="principal-hero-img">
+            </div>
+        </div>
+        <div class="item">
+            <div class="img-container">
+                <img src="https://www.placedog.net/300" alt="dogo" class="principal-hero-img">
+            </div>
+        </div>
+
+    </aside>
 
 
 </body>

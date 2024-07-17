@@ -38,16 +38,19 @@ h1 {
 .but1-color {
   background-color: #0e6eff;
   color: #f4f4f4;
+  border-radius: 20px;
 }
 
 .but2-color {
   background-color: #ff8700;
   color: #f4f4f4;
+  border-radius: 20px;
 }
 
 .but3-color {
   background-color: #4caf50;
   color: #f4f4f4;
+  border-radius: 20px;
 }
 
 body {
@@ -74,6 +77,10 @@ body {
   font-size: 36px;
 }
 
+.font-xxxl {
+  font-size: 48px;
+}
+
 h1 {
   font-size: 36px;
 }
@@ -98,12 +105,12 @@ h1 {
 }
 .d-flex-grid .item {
   width: 25%;
-  border-radius: 20px;
 }
 .d-flex-grid .item .img-container {
   overflow: hidden;
   width: 90%;
   margin: 0 auto;
+  border-radius: 20px;
 }
 .d-flex-grid .item .img-container img {
   -o-object-fit: cover;
@@ -123,8 +130,24 @@ h1 {
   display: flex;
 }
 
-.j-content {
+.j-content-between {
+  justify-content: space-between;
+}
+
+.j-content-evenly {
+  justify-content: space-evenly;
+}
+
+.j-content-around {
   justify-content: space-around;
+}
+
+.a-items-center {
+  align-items: center;
+}
+
+.gap-sm {
+  gap: 10px;
 }
 
 .margin-block-sm {
@@ -245,4 +268,8 @@ h1 {
 .padding-inline-xxl {
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.hero-left {
+  width: 30%;
 }/*# sourceMappingURL=style.css.map */

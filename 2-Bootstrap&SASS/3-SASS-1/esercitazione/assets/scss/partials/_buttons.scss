@@ -8,7 +8,9 @@ $bottoni: (
 @each $nome, $value in $bottoni {
     .#{$nome}-color {
         background-color: $value;
-        color: $text-color
+        color: $text-color;
+        border-radius: 20px;
     }
 }
+
 
