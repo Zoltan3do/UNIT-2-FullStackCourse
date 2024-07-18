@@ -1,0 +1,1 @@
+console.log(typeof NaN); // Il tipo di 'Non-è-un-numero' è numero.XD

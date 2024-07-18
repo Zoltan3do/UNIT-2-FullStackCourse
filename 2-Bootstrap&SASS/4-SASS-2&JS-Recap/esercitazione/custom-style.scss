@@ -1,0 +1,19 @@
+@import "scss/functions";
+@import "scss/variables";
+
+
+$new-primary: #7550FE;
+$new-success: #1ACB98;
+$new-warning: #FFAA46;
+
+$new-theme-colors: (
+    "primary":$new-primary,
+    "success":$new-success,
+    "warning":$new-warning
+);
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+$headings-font-family: "Inter", sans-serif;
+
+@import "scss/bootstrap.scss";
