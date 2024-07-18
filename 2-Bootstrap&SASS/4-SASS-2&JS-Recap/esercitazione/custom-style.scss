@@ -9,11 +9,12 @@ $new-warning: #FFAA46;
 $new-theme-colors: (
     "primary":$new-primary,
     "success":$new-success,
-    "warning":$new-warning
+    "warning":$new-warning,
+    "manuel":#045365
 );
 
 $theme-colors: map-merge($theme-colors, $new-theme-colors);
 
-$headings-font-family: "Inter", sans-serif;
+// $headings-font-family: "Inter", sans-serif;
 
 @import "scss/bootstrap.scss";
