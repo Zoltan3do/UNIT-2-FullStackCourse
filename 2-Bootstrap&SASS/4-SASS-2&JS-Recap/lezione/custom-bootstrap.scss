@@ -1,0 +1,31 @@
+// Lo Scopo di questo progetto è apportare i sorgenti di bootstrap, applicarre kle modifiche necessarie per la loro 
+// personalizzazione e infine ottenere tramite il processo di compilazione una versione personalizzata di BS.
+
+// Modifichiamo i colori di base di bootstrap:
+
+@import "scss/functions";
+@import "scss/variables";
+
+
+$new-primary: rgb(255, 57, 57);
+$new-success: rgb(89, 234, 89);
+$new-warning: rgb(185, 185, 52);
+
+$new-theme-colors: (
+    "primary":$new-primary,
+    "success":$new-success,
+    "warning":$new-success
+);
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors); // map-merge sovrascrive e fonde due mappe (standard e personalizzata)
+
+
+$new-spacers: (
+    6: $spacer * 4
+);
+
+$spacers: map-merge($spacers, $new-spacers);
+
+@import "scss/bootstrap.scss"; // importo tutto il resto di bootstrap
+
+// !default rende le variabili non sovrascriventi , rimuove la capacità di sovrascrivere alle variabili
