@@ -62,6 +62,7 @@ class Pet {
 const petsArr = [];
 
 document.getElementsByTagName("form")[0].addEventListener("submit", function (e) {
+
     e.preventDefault();
     const contacts = document.getElementsByTagName("h2")[0];
     const petNameIn = document.getElementById("petName");
@@ -84,5 +85,6 @@ document.getElementsByTagName("form")[0].addEventListener("submit", function (e)
     item.classList.add("list-group-item");
     item.innerText = `Nome: ${pet.getPetName}, Nome del padrone: ${pet.getOwnerName}, Specie: ${pet.getSpecies}, Razza: ${pet.getBreed}`;
     listGroup.appendChild(item);
+    this.reset();
 
 });
