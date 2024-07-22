@@ -51,8 +51,8 @@ class Pet {
         return this.#breed;
     }
 
-    padroneUguale = function(obj){
-        if(this.#ownerName === obj.getOwnerName){
+    padroneUguale = function (obj) {
+        if (this.#ownerName === obj.getOwnerName) {
             return "I due cani condividono lo stesso padrone";
         }
     }
