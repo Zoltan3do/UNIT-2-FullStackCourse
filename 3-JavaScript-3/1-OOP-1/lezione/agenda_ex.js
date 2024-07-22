@@ -20,7 +20,7 @@ class Contact {
       e.preventDefault() // <-- fondamentale
   
       // recuperiamo i riferimenti ai 3 campi input
-      const firstNameInput = document.getElementById('firstName')
+      const firstNameInput = document.getElementById('petName')
       const lastNameInput = document.getElementById('lastName')
       const phoneInput = document.getElementById('phone')
   
