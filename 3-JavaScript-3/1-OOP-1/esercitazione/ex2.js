@@ -53,7 +53,7 @@ class Pet {
 
     padroneUguale = function (obj) {
         if (this.#ownerName === obj.getOwnerName) {
-            return "I due cani condividono lo stesso padrone";
+            return true;
         }
     }
 
