@@ -20,5 +20,4 @@ salva.addEventListener("click", function () {
 rimuovi.addEventListener("click", function () {
     localStorage.removeItem("nombre");
     nomeAttuale.innerText = localStorage.getItem("nombre");
-
 });
