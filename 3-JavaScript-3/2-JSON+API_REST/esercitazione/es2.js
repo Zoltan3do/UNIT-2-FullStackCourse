@@ -3,7 +3,7 @@ function getRandomColor() {
     const hexColor = randomColor.toString(16).padStart(6, '0');
     return `#${hexColor}`;
 }
-let count = parseInt(sessionStorage.getItem("timer")) || 0;
+let count = parseInt(sessionStorage.getItem("timer")) || -1;
 
 function counter() {
     const secondi = document.getElementById("secondi");
