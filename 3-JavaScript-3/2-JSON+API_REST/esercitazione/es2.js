@@ -3,13 +3,13 @@ function getRandomColor() {
     const hexColor = randomColor.toString(16).padStart(6, '0');
     return `#${hexColor}`;
 }
-
-sessionStorage.setItem("timer", 0);
-let count = parseInt(sessionStorage.getItem("timer"));
+let count = parseInt(sessionStorage.getItem("timer")) || 0;
+let clock = parseInt(sessionStorage.getItem("timer"));
 
 function counter() {
     const secondi = document.getElementById("secondi");
     count++;
+    clock = count;
     sessionStorage.setItem("timer", count);
     secondi.innerText = count;
     console.log()
