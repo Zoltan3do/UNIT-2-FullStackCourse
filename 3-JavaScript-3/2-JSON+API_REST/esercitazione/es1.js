@@ -10,7 +10,7 @@ salva.addEventListener("click", function () {
         localStorage.setItem("nombre", nome);
     }
     else
-        throw new Error("Esiste già un nome in memoria e mi scoccio di aggiungere la possibilità di sovrascrittura nel metodo! Quindi elimina quello precedente!!!");
+        throw new Error("Esiste già un nome in memoria e mi scoccio di aggiungere la possibilità di sovrascrittura nel metodo! Quindi elimina quello precedente!!!")
 
     console.log(localStorage.getItem("nombre"));
     nomeAttuale.innerText = localStorage.getItem("nombre");
@@ -20,4 +20,5 @@ salva.addEventListener("click", function () {
 rimuovi.addEventListener("click", function () {
     localStorage.removeItem("nombre");
     nomeAttuale.innerText = localStorage.getItem("nombre");
+
 });
