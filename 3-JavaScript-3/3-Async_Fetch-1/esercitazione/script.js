@@ -6,4 +6,7 @@
 // ● Sempre nel “card body” inserisci un pulsante “Scarta”. Se premuto, dovrà far scomparire la card dalla pagina. 
 
 // ● EXTRA: crea una lista che rappresenti il carrello del negozio e inseriscila dove vuoi nella pagina. Aggiungi un altro pulsante “Compra ora” vicino a “Scarta” nelle card per aggiungere il libro al carrello. Il carrello dovrà persistere nello storage del browser. 
-// ● EXTRA: aggiungi vicino ad ogni libro del carrello un pulsante per rimuoverlo dal carrello
+// ● EXTRA: aggiungi vicino ad ogni libro del carrello un pulsante per rimuoverlo dal carrello.
+
+
+const ENDPOINT = "https://striveschool-api.herokuapp.com/books";
