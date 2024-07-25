@@ -73,7 +73,7 @@ function updateModalBackground(imgUrl) {
 
     img.onload = function () {
         const dominantColor = colorThief.getColor(img);
-        document.querySelector('.modal-content').style.backgroundColor = `rgb(${dominantColor[0]},${dominantColor[1]},${dominantColor[2]})`;
+        document.querySelector('.modal-content').style.backgroundColor = `rgb(${dominantColor[0]},${dominantColor[1]},${dominantColor[2]},0.9)`;
     };
 }
 
