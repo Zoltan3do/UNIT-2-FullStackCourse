@@ -80,26 +80,24 @@ function buyNow(b) {
 
 
 function buildList() {
-    const liste = Array.from(document.getElementsByClassName("lista"));
     const bL = document.getElementById("blackList");
-
-            bL.innerHTML = "";
-            carrello.forEach((item, i) => {
-                const lit = document.createElement("li");
-                const del = document.createElement("button");
-                del.classList.add("text-danger", "ms-5");
-                del.innerHTML = "delete";
-                lit.classList.add("fs4","mb-1");
-                lit.innerText = item.title + " " + item.price + "€";
-                bL.appendChild(lit);
-                lit.appendChild(del);
-                del.addEventListener("click", function (e) {
-                    e.target.closest("li").remove();
-                    carrello.splice(i, 1);
-                    localStorage.setItem("list", JSON.stringify(carrello));
-                    buildList()
-                });
-            })
+    bL.innerHTML = "";
+    carrello.forEach((item, i) => {
+        const lit = document.createElement("li");
+        const del = document.createElement("button");
+        del.classList.add("text-danger", "ms-5");
+        del.innerHTML = "delete";
+        lit.classList.add("fs4", "mb-1");
+        lit.innerText = item.title + " " + item.price + "€";
+        bL.appendChild(lit);
+        lit.appendChild(del);
+        del.addEventListener("click", function (e) {
+            e.target.closest("li").remove();
+            carrello.splice(i, 1);
+            localStorage.setItem("list", JSON.stringify(carrello));
+            buildList()
+        });
+    })
 }
 buildList()
 
