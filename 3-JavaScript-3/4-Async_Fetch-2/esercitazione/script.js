@@ -55,7 +55,7 @@ async function fetchImages(query) {
 
         document.querySelectorAll('.hide-btn').forEach(button => {
             button.addEventListener('click', (e) => {
-                e.target.closest('.card').style.opacity = 0.3;
+                e.target.closest('.card').style.opacity = 0.3
             });
         });
 
@@ -73,7 +73,7 @@ function updateModalBackground(imgUrl) {
 
     img.onload = function () {
         const dominantColor = colorThief.getColor(img);
-        document.querySelector('.modal-content').style.backgroundColor = `rgb(${dominantColor.join(',')})`;
+        document.querySelector('.modal-content').style.backgroundColor = `rgb(${dominantColor[0]},${dominantColor[1]},${dominantColor[2]})`;
     };
 }
 
