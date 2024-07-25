@@ -10,7 +10,7 @@ const modalArtistLink = document.getElementById('modal-artist-link');
 
 async function fetchImages(query) {
     try {
-        const response = await fetch(`https://api.pexels.com/v1/search?query=${query}`, {
+        const response = await fetch(`https://api.pexels.com/v1/search?query=${query}&size-medium&orientation=square`, {
             headers: { 'Authorization': apiKey }
         })
         if (!response.ok) {
