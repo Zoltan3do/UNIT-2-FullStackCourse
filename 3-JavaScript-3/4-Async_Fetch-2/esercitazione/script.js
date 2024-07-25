@@ -81,7 +81,7 @@ loadImagesBtn.addEventListener('click', () => fetchImages(searchInput.value || '
 loadSecondaryImagesBtn.addEventListener('click', () => fetchImages(searchInput.value + ' abstract' || "secondary"));
 
 searchInput.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') {
+    if (this === 'Enter') {
         fetchImages(searchInput.value);
     }
 });
