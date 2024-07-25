@@ -7,6 +7,7 @@ const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
 const modalImg = document.getElementById('modal-img');
 const modalArtist = document.getElementById('modal-artist');
 const modalArtistLink = document.getElementById('modal-artist-link');
+const modalTitle = document.getElementById("imageModalLabel");
 
 async function fetchImages(query) {
     try {
@@ -33,7 +34,7 @@ async function fetchImages(query) {
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary view-btn" data-id="${img.id}" data-src="${img.src.original}" data-artist="${img.photographer}" data-artist-link="${img.photographer_url}">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary view-btn" data-id="${img.id}" data-src="${img.src.original}" data-artist="${img.photographer}" data-artist-link="${img.photographer_url}" data-alt="${img.alt}">View</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary hide-btn" data-id="${img.id}">Hide</button>
                 </div>
                 <small class="text-muted">${img.id}</small>
@@ -45,7 +46,8 @@ async function fetchImages(query) {
 
         document.querySelectorAll('.view-btn').forEach(button => {
             button.addEventListener('click', (e) => {
-                const { src, artist, artistLink } = e.target.dataset;
+                const { src, artist, artistLink, alt } = e.target.dataset;
+                modalTitle.innerText = alt;
                 modalImg.src = src;
                 modalImg.style.width = "100%";
                 modalArtist.innerHTML = `Artist: <a href="${artistLink}" target="_blank">${artist}</a>`;
@@ -92,7 +94,7 @@ loadSecondaryImagesBtn.addEventListener('click', () => fetchImages(searchInput.v
 
 
 searchInput.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') { 
+    if (e.key === 'Enter') {
         fetchImages(searchInput.value);
     }
 });
