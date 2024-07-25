@@ -13,6 +13,7 @@ async function fetchImages(query) {
         const response = await fetch(`https://api.pexels.com/v1/search?query=${query}&size-medium&orientation=square`, {
             headers: { 'Authorization': apiKey }
         })
+
         if (!response.ok) {
             throw new Error(`HTTP error ! Status: ${response.status}`);
         }
@@ -53,6 +54,15 @@ async function fetchImages(query) {
             });
         });
 
+        document.querySelectorAll('img').forEach(i => {
+            i.addEventListener('click', (e) => {
+                localStorage.setItem("sourceImg", e.target.src);
+                localStorage.setItem("artistName", e.target.photographer);
+                localStorage.setItem("artistLink", e.target.photographer_url);
+                window.open("./img.html", "_blank");
+            });
+        });
+
         document.querySelectorAll('.hide-btn').forEach(button => {
             button.addEventListener('click', (e) => {
                 e.target.closest('.card').style.opacity = 0.3
@@ -80,8 +90,9 @@ function updateModalBackground(imgUrl) {
 loadImagesBtn.addEventListener('click', () => fetchImages(searchInput.value || 'nature'));
 loadSecondaryImagesBtn.addEventListener('click', () => fetchImages(searchInput.value + ' abstract' || "secondary"));
 
+
 searchInput.addEventListener('keypress', (e) => {
-    if (this === 'Enter') {
+    if (e.key === 'Enter') { 
         fetchImages(searchInput.value);
     }
 });
