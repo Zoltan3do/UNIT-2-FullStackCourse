@@ -7,253 +7,622 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="custom-style.css">
+    <link rel="stylesheet" href="./scss/custom-style.css">
     <title>Web Students</title>
 </head>
 
-<body>
-    <header >
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
+<body style="font-family: Inter;">
+    <header class="sticky-top bg-light">
+        <nav class="navbar navbar-expand-lg bg-body-light">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
                 <a class="navbar-brand" href="#"><img src="assets/logo.svg" alt="logo"></a>
-                <div class="row row-cols-3">
-                    <div class="d-lg-none"><img src="assets/bell.svg" alt="bell"></div>
+                <div class="w-75 d-flex justify-content-end align-items-center">
+                    <button type="button"
+                        class="btn  position-relative rounded-circle bg-body-tertiary navbar-toggler border-0">
+                        <img src="assets/bell.svg" alt="bell">
+                        <span
+                            class="position-absolute top-25 start-75 translate-middle p-1 bg-primary border border-light rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </button>
+                    <button type="button" class="btn  position-relative w-25 navbar-toggler border-0" id="bottone">
+                        <img src="assets/avatar-1.jpg" alt="bell" class="w-100 object-fit-cover rounded-circle " />
+                        <span
+                            class="position-absolute bottom-0 start-75 translate-middle p-1 bg-success border border-light rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </button>
+                    <button class="navbar-toggler border-primary h-50 border-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
-                <div class="d-lg-none"><img src="assets/avatar-1.jpg" alt="bell"></div>
-                <div class=""> <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon text-primary"></span>
-                    </button></div>
-            </div>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-dark fw-medium">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Browse
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">A</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">C</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Landings
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">A</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">C</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Pages
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">A</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">C</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Accounts
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">A</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">C</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="crazy-div d-none d-lg-block">
-                    <a href="#"><img src="assets/bell.svg" alt="campanella"></a>
-                    <a href="#"><img src="assets/avatar-1.jpg" alt="av1"></a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Browse
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Landings
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Accounts
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
         </nav>
     </header>
-
-    <main class="container-fluid">
-        <div class="row p-3 bg-primary pb-0">
-            <div class="col-12">
-                <p class="text-light fs-1 fw-semibold">Welcome Web Students!</p>
-            </div>
-            <div class="col-12">
-                <p class="text-light-emphasis">Hand-Picked Instructor and expertly crafted courses, designed for the
-                    modern students and entrepreneur.</p>
-            </div>
-            <div class="col-5">
-                <button type="button" class="btn btn-success text-light w-100 m-0 fw-semibold">Browse Courses</button>
-            </div>
-            <div class="col-6 mb-4">
-                <button type="button" class="btn btn-light w-100 m-0 fw-semibold fs-6">Are You Instructor?</button>
-            </div>
-            <div class="col-12 justify-content-center d-flex">
-                <img src="assets/hero-img.png" alt="hero" class="w-100">
-            </div>
-        </div>
-        <div class="row p-4 border border-5 border-light-subtle border-start-0 border-end-0 border-top-0 ">
-            <div class="col-2">
-                <p
-                    class="fs-6 border rounded-circle d-flex  justify-content-center align-baseline p-3 border-0 bg-warning">
-                    📽️</p>
-            </div>
-            <div class="col-6">
-                <p class="m-0 fw-bold">30.000 online courses</p>
-                <p class="">Enjoy a variety of fresh topics</p>
-            </div>
-            <div class="col-4"></div>
-            <div class="col-2">
-                <p
-                    class="fs-6 border rounded-circle d-flex  justify-content-center align-baseline p-3 border-0 bg-warning">
-                    👥</p>
-            </div>
-            <div class="col-6">
-                <p class="m-0 fw-bold">30.000 online courses</p>
-                <p class="">Enjoy a variety of fresh topics</p>
-            </div>
-            <div class="col-4"></div>
-            <div class="col-2">
-                <p
-                    class="fs-6 border rounded-circle d-flex  justify-content-center align-baseline p-3 border-0 bg-warning">
-                    🕓</p>
-            </div>
-            <div class="col-6">
-                <p class="m-0 fw-bold">30.000 online courses</p>
-                <p class="">Enjoy a variety of fresh topics</p>
-            </div>
-            <div class="col-4"></div>
-        </div>
-        <section class="row bg-body-secondary pt-5 p-4">
-            <div class="col-12 fs-3 fw-semibold mb-4">Recommended to you</div>
-            <div class="col-12">
-
-
-
-
-                <div id="carouselExample" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active ">
-                            <div class="row row row-cols-2 d-flex">
-                                <div class="col">
-                                    <div class="card border border-2 rounded-4 overflow-hidden p-0 h-100 ">
-                                        <img src="assets/course-graphql.jpg" alt="graph" class="w-100">
-                                        <p class="ps-3 m-0 fw-semibold py-1">GraphQL: Introduction to graphQL for beginners
-                                        </p>
-                                        <p class="ps-3 m-0 py-1"><span>🕑</span> 2h 40m <span>📈</span>Advance</p>
-                                        <p class="ps-3 py-1">(1500)</p>
-                                        <p
-                                            class="ps-3 fw-semibold pb-3 border border-2 border-light-subtle border-top-0 border-start-0 border-end-0">
-                                            $500 <s class="fw-light">$600</s></p>
-                                        <div class="col-12 px-3 d-flex justify-content-between align-items-start">
-                                            <p><span><img src="" alt=""></span> Miston Wilson</p>
-                                            <img src="assets/bookmark.svg" alt="mark">
-                                        </div>
-                                    </div>
-    
-                                </div>
-                                <div class="col">
-                                    <div class="card border border-2 rounded-4 overflow-hidden p-0 h-100 ">
-                                        <img src="assets/course-graphql.jpg" alt="graph" class="w-100">
-                                        <p class="ps-3 m-0 fw-semibold py-1">GraphQL: Introduction to graphQL for beginners
-                                        </p>
-                                        <p class="ps-3 m-0 py-1"><span>🕑</span> 2h 40m <span>📈</span>Advance</p>
-                                        <p class="ps-3 py-1">(1500)</p>
-                                        <p
-                                            class="ps-3 fw-semibold pb-3 border border-2 border-light-subtle border-top-0 border-start-0 border-end-0">
-                                            $500 <s class="fw-light">$600</s></p>
-                                        <div class="col-12 px-3 d-flex justify-content-between align-items-start">
-                                            <p><span><img src="" alt=""></span> Miston Wilson</p>
-                                            <img src="assets/bookmark.svg" alt="mark">
-                                        </div>
-                                    </div>
-    
-                                </div>
-
-                            </div>
-
-
+    <main class="z-1">
+        <div class="hero container-fluid bg-primary p-3 pb-0">
+            <div class="row">
+                <div class="col-12 p-0 mb-2 ps-3 pt-3">
+                    <h1 class="text-light fs-8 text-start fw-bold ">Welcome Web Students!</h1>
+                </div>
+                <div class="col-12 text-bs-gray-500 text-start mb-3 fs-6 ps-3 ">
+                    <p>Hand-picker instructor and expertly crafted courses, <br>designed for the modern students and
+                        entrepreneur</p>
+                </div>
+                <div class="col-12">
+                    <div class="row ps-4">
+                        <div class="col-5 d-flex justify-content-start m-0">
+                            <button class="btn btn-success fw-semibold text-light py-2 w-100">Browse Courses</button>
                         </div>
-                        <div class="carousel-item active ">
-                            <div class="row row row-cols-2 d-flex">
-                                <div class="col">
-                                    <div class="card border border-2 rounded-4 overflow-hidden p-0 h-100 ">
-                                        <img src="assets/course-graphql.jpg" alt="graph" class="w-100">
-                                        <p class="ps-3 m-0 fw-semibold py-1">GraphQL: Introduction to graphQL for beginners
-                                        </p>
-                                        <p class="ps-3 m-0 py-1"><span>🕑</span> 2h 40m <span>📈</span>Advance</p>
-                                        <p class="ps-3 py-1">(1500)</p>
-                                        <p
-                                            class="ps-3 fw-semibold pb-3 border border-2 border-light-subtle border-top-0 border-start-0 border-end-0">
-                                            $500 <s class="fw-light">$600</s></p>
-                                        <div class="col-12 px-3 d-flex justify-content-between align-items-start">
-                                            <p><span><img src="" alt=""></span> Miston Wilson</p>
-                                            <img src="assets/bookmark.svg" alt="mark">
-                                        </div>
-                                    </div>
-    
-                                </div>
-                                <div class="col">
-                                    <div class="card border border-2 rounded-4 overflow-hidden p-0 h-100 ">
-                                        <img src="assets/course-graphql.jpg" alt="graph" class="w-100">
-                                        <p class="ps-3 m-0 fw-semibold py-1">GraphQL: Introduction to graphQL for beginners
-                                        </p>
-                                        <p class="ps-3 m-0 py-1"><span>🕑</span> 2h 40m <span>📈</span>Advance</p>
-                                        <p class="ps-3 py-1">(1500)</p>
-                                        <p
-                                            class="ps-3 fw-semibold pb-3 border border-2 border-light-subtle border-top-0 border-start-0 border-end-0">
-                                            $500 <s class="fw-light">$600</s></p>
-                                        <div class="col-12 px-3 d-flex justify-content-between align-items-start">
-                                            <p><span><img src="" alt=""></span> Miston Wilson</p>
-                                            <img src="assets/bookmark.svg" alt="mark">
-                                        </div>
-                                    </div>
-    
-                                </div>
-
-                            </div>
-
-
+                        <div class="col d-flex justify-content-start m-0">
+                            <button class="btn btn-light fw-semibold py-2 w-100">Are You Instructor?</button>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                </div>
+
+                <div class="col-12 d-flex justify-content-center pt-3">
+                    <img src="assets/hero-img.png" alt="hero-img" class="w-100">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-4 mb-3">
+            <div class="information row ">
+                <div class="col-12 d-flex align-items-center mb-4">
+                    <div class="icon-container bg-warning d-flex justify-content-center align-items-center me-3 circle">
+                        <img src="assets/camera-video.svg " alt="camera" class="w-40">
+                    </div>
+                    <div class="text-container d-flex flex-column">
+                        <p class="m-0 fw-bolder">30,000 online courses</p>
+                        <p class="m-0 fw-light fs-small">Enjoy a variety of fresh topics</p>
+                    </div>
+                </div>
+                <div class="col-12 d-flex align-items-center mb-4">
+                    <div class="icon-container bg-warning d-flex justify-content-center align-items-center me-3 circle">
+                        <img src="assets/people-fill.svg " alt="camera" class="w-40">
+                    </div>
+                    <div class="text-container d-flex flex-column">
+                        <p class="m-0 fw-bolder">Expert instruction</p>
+                        <p class="m-0 fw-light fs-small">Find the right instructor for you</p>
+                    </div>
+                </div>
+                <div class="col-12 d-flex align-items-center mb-4">
+                    <div class="icon-container bg-warning d-flex justify-content-center align-items-center me-3 circle">
+                        <img src="assets/clock.svg " alt="camera" class="w-40">
+                    </div>
+                    <div class="text-container d-flex flex-column">
+                        <p class="m-0 fw-bolder">Lifetime access</p>
+                        <p class="m-0 fw-light fs-small">Learn on your schedule</p>
+                    </div>
                 </div>
             </div>
 
+        </div>
+        <div class="container-fluid mb-5">
+            <div class="row recommend">
+                <div class="col-12 mb-2">
+                    <h2>Recommended to you</h2>
+                </div>
+                <div class="col-12">
+                    <div id="recommended" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex w-100 gap-2">
+                                    <div class="w-48 ">
+                                        <div class="card w-100">
+                                            <img src="assets/course-graphql.jpg" class="card-img-top" alt="img-top">
+                                            <div class="card-body d-flex flex-column justify-content-center">
+                                                <h5 class="card-title fs-6 fw-semibold lh-base mb-2">GraphQL:
+                                                    introduction
+                                                    to graphQL for beginners</h5>
+                                                <p class="card-text fs-small"><img src="assets/clock.svg" alt="clock"
+                                                        class="mx-2">2h 40m <img src="assets/bar-chart-line.svg"
+                                                        alt="chart" class="mx-2">Advance</p>
+                                                <p class="d-flex text-warning align-items-center"><img
+                                                        src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-half.svg" alt="sh">
+                                                    <img src="assets/star.svg" alt="s">
+                                                    <img src="assets/star.svg" alt="s" class="me-2">
+                                                    2.5
+                                                    <span class="text-dark ms-2 fs-small">(1.500)</span>
+                                                </p>
+                                                <p class="fw-semibold mb-4">$500 <del
+                                                        class="text-gray2 fs-small">$600</del>
+                                                </p>
+                                                <p class="d-flex alig-items-center"><img src="assets/avatar-5.jpg"
+                                                        alt="brooklyn" class="w-15 rounded-circle me-2"><span
+                                                        class="fs-small d-flex align-items-center me-2">Brooklyn
+                                                        Simmons</span>
+                                                    <img src="assets/bookmark.svg" alt="bookmark" class="w-10">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-48 ">
+                                        <div class="card w-100">
+                                            <img src="assets/course-javascript.jpg" class="card-img-top" alt="img-top">
+                                            <div class="card-body d-flex flex-column justify-content-center">
+                                                <h5 class="card-title fs-6 fw-semibold lh-base mb-2">A Complete
+                                                    Beginner's
+                                                    Guide to JavaScript</h5>
+                                                <p class="card-text fs-small"><img src="assets/clock.svg" alt="clock"
+                                                        class="mx-2">4h 10m <img src="assets/bar-chart-line.svg"
+                                                        alt="chart" class="mx-2">Advance</p>
+                                                <p class="d-flex text-warning align-items-center"><img
+                                                        src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sh">
+                                                    <img src="assets/star-half.svg" alt="s">
+                                                    <img src="assets/star.svg" alt="s" class="me-2">
+                                                    3.5
+                                                    <span class="text-dark ms-2 fs-small">(7.500)</span>
+                                                </p>
+                                                <p class="fw-semibold mb-4">$700 <del
+                                                        class="text-gray2 fs-small">$850</del>
+                                                </p>
+                                                <p class="d-flex alig-items-center"><img src="assets/avatar-1.jpg"
+                                                        alt="brooklyn" class="w-15 rounded-circle me-2"><span
+                                                        class="fs-small d-flex align-items-center me-2">Jenny
+                                                        Wilson</span>
+                                                    <img src="assets/bookmark.svg" alt="bookmark" class="w-10">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="d-flex w-100 gap-2">
+                                    <div class="w-48 ">
+                                        <div class="card w-100">
+                                            <img src="assets/course-node.jpg" class="card-img-top" alt="img-top">
+                                            <div class="card-body d-flex flex-column justify-content-center">
+                                                <h5 class="card-title fs-6 fw-semibold lh-base mb-2">Beginning Node.js,
+                                                    Express & MongoDB Development</h5>
+                                                <p class="card-text fs-small"><img src="assets/clock.svg" alt="clock"
+                                                        class="mx-2">2h 00m <img src="assets/bar-chart-line.svg"
+                                                        alt="chart" class="mx-2">Intermediate</p>
+                                                <p class="d-flex text-warning align-items-center"><img
+                                                        src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sh">
+                                                    <img src="assets/star-fill.svg" alt="s">
+                                                    <img src="assets/star.svg" alt="s" class="me-2">
+                                                    4.0
+                                                    <span class="text-dark ms-2 fs-small">(15.700)</span>
+                                                </p>
+                                                <p class="fw-semibold mb-4">$800 <del
+                                                        class="text-gray2 fs-small">$950</del>
+                                                </p>
+                                                <p class="d-flex alig-items-center"><img src="assets/avatar-3.jpg"
+                                                        alt="brooklyn" class="w-15 rounded-circle me-2"><span
+                                                        class="fs-small d-flex align-items-center me-2">Sina Ray</span>
+                                                    <img src="assets/bookmark.svg" alt="bookmark" class="w-10">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-48 ">
+                                        <div class="card w-100">
+                                            <img src="assets/course-laravel.jpg" class="card-img-top" alt="img-top">
+                                            <div class="card-body d-flex flex-column justify-content-center">
+                                                <h5 class="card-title fs-6 fw-semibold lh-base mb-2">Laravel: The
+                                                    Ultimate Beginner's Guide to Learn</h5>
+                                                <p class="card-text fs-small"><img src="assets/clock.svg" alt="clock"
+                                                        class="mx-2">1h 00m <img src="assets/bar-chart-line.svg"
+                                                        alt="chart" class="mx-2">Beginner</p>
+                                                <p class="d-flex text-warning align-items-center"><img
+                                                        src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sh">
+                                                    <img src="assets/star-fill.svg" alt="s">
+                                                    <img src="assets/star-half.svg" alt="s" class="me-2">
+                                                    4.5
+                                                    <span class="text-dark ms-2 fs-small">(2.500)</span>
+                                                </p>
+                                                <p class="fw-semibold mb-4">$170 <del
+                                                        class="text-gray2 fs-small">$220</del>
+                                                </p>
+                                                <p class="d-flex alig-items-center"><img src="assets/avatar-7.jpg"
+                                                        alt="brooklyn" class="w-15 rounded-circle me-2"><span
+                                                        class="fs-small d-flex align-items-center me-2">Sobo
+                                                        Rikhan</span>
+                                                    <img src="assets/bookmark.svg" alt="bookmark" class="w-10">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#recommended"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#recommended"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
 
-        </section>
+        </div>
+        <div class="container-fluid mb-5">
+            <div class="row recommend">
+                <div class="col-12 mb-2">
+                    <h2>Most Popular</h2>
+                </div>
+                <div class="col-12">
+                    <div id="popular" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex w-100 gap-2">
+                                    <div class="w-48 ">
+                                        <div class="card w-100">
+                                            <img src="assets/course-html.jpg" class="card-img-top" alt="img-top">
+                                            <div class="card-body d-flex flex-column justify-content-center">
+                                                <h5 class="card-title fs-6 fw-semibold lh-base mb-2">HTML Full Course -
+                                                    Build a Website Tutorial</h5>
+                                                <p class="card-text fs-small"><img src="assets/clock.svg" alt="clock"
+                                                        class="mx-2">3h 16m <img src="assets/bar-chart-line.svg"
+                                                        alt="chart" class="mx-2">Beginner</p>
+                                                <p class="d-flex text-warning align-items-center"><img
+                                                        src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sh">
+                                                    <img src="assets/star.svg" alt="s">
+                                                    <img src="assets/star.svg" alt="s" class="me-2">
+                                                    3.0
+                                                    <span class="text-dark ms-2 fs-small">(1.600)</span>
+                                                </p>
+                                                <p class="fw-semibold mb-4">$550 <del
+                                                        class="text-gray2 fs-small">$700</del>
+                                                </p>
+                                                <p class="d-flex alig-items-center"><img src="assets/avatar-8.jpg"
+                                                        alt="brooklyn" class="w-15 rounded-circle me-2"><span
+                                                        class="fs-small d-flex align-items-center me-2">Miston
+                                                        Wilson</span>
+                                                    <img src="assets/bookmark.svg" alt="bookmark" class="w-10">
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-48 ">
+                                        <div class="card w-100">
+                                            <img src="assets/course-javascript.jpg" class="card-img-top" alt="img-top">
+                                            <div class="card-body d-flex flex-column justify-content-center">
+                                                <h5 class="card-title fs-6 fw-semibold lh-base mb-2">A Complete
+                                                    Beginner's
+                                                    Guide to JavaScript</h5>
+                                                <p class="card-text fs-small"><img src="assets/clock.svg" alt="clock"
+                                                        class="mx-2">4h 10m <img src="assets/bar-chart-line.svg"
+                                                        alt="chart" class="mx-2">Advance</p>
+                                                <p class="d-flex text-warning align-items-center"><img
+                                                        src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sh">
+                                                    <img src="assets/star-half.svg" alt="s">
+                                                    <img src="assets/star.svg" alt="s" class="me-2">
+                                                    3.5
+                                                    <span class="text-dark ms-2 fs-small">(7.500)</span>
+                                                </p>
+                                                <p class="fw-semibold mb-4">$700 <del
+                                                        class="text-gray2 fs-small">$850</del>
+                                                </p>
+                                                <p class="d-flex alig-items-center"><img src="assets/avatar-1.jpg"
+                                                        alt="brooklyn" class="w-15 rounded-circle me-2"><span
+                                                        class="fs-small d-flex align-items-center me-2">Jenny
+                                                        Wilson</span>
+                                                    <img src="assets/bookmark.svg" alt="bookmark" class="w-10">
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="d-flex w-100 gap-2">
+                                    <div class="w-48 ">
+                                        <div class="card w-100">
+                                            <img src="assets/course-node.jpg" class="card-img-top" alt="img-top">
+                                            <div class="card-body d-flex flex-column justify-content-center">
+                                                <h5 class="card-title fs-6 fw-semibold lh-base mb-2">Beginning Node.js,
+                                                    Express & MongoDB Development</h5>
+                                                <p class="card-text fs-small"><img src="assets/clock.svg" alt="clock"
+                                                        class="mx-2">2h 00m <img src="assets/bar-chart-line.svg"
+                                                        alt="chart" class="mx-2">Intermediate</p>
+                                                <p class="d-flex text-warning align-items-center"><img
+                                                        src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sh">
+                                                    <img src="assets/star-fill.svg" alt="s">
+                                                    <img src="assets/star.svg" alt="s" class="me-2">
+                                                    4.0
+                                                    <span class="text-dark ms-2 fs-small">(15.700)</span>
+                                                </p>
+                                                <p class="fw-semibold mb-4">$800 <del
+                                                        class="text-gray2 fs-small">$950</del>
+                                                </p>
+                                                <p class="d-flex alig-items-center"><img src="assets/avatar-3.jpg"
+                                                        alt="brooklyn" class="w-15 rounded-circle me-2"><span
+                                                        class="fs-small d-flex align-items-center me-2">Sina Ray</span>
+                                                    <img src="assets/bookmark.svg" alt="bookmark" class="w-10">
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-48 ">
+                                        <div class="card w-100">
+                                            <img src="assets/course-react.jpg" class="card-img-top" alt="img-top">
+                                            <div class="card-body d-flex flex-column justify-content-center">
+                                                <h5 class="card-title fs-6 fw-semibold lh-base mb-2">How to easily
+                                                    create a website with React</h5>
+                                                <p class="card-text fs-small"><img src="assets/clock.svg" alt="clock"
+                                                        class="mx-2">3h 55m <img src="assets/bar-chart-line.svg"
+                                                        alt="chart" class="mx-2">Advance</p>
+                                                <p class="d-flex text-warning align-items-center"><img
+                                                        src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sh">
+                                                    <img src="assets/star-fill.svg" alt="s">
+                                                    <img src="assets/star-half.svg" alt="s" class="me-2">
+                                                    4.5
+                                                    <span class="text-dark ms-2 fs-small">(1.500)</span>
+                                                </p>
+                                                <p class="fw-semibold mb-4">$600 <del
+                                                        class="text-gray2 fs-small">$750</del>
+                                                </p>
+                                                <p class="d-flex alig-items-center"><img src="assets/avatar-2.jpg"
+                                                        alt="brooklyn" class="w-15 rounded-circle me-2"><span
+                                                        class="fs-small d-flex align-items-center me-2">April
+                                                        Noms</span>
+                                                    <img src="assets/bookmark.svg" alt="bookmark" class="w-10">
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#popular"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#popular"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="container-fluid mb-5">
+            <div class="row recommend">
+                <div class="col-12 mb-2">
+                    <h2>Trending</h2>
+                </div>
+                <div class="col-12">
+                    <div id="trending" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex w-100 gap-2">
+                                    <div class="w-48 ">
+                                        <div class="card w-100">
+                                            <img src="assets/course-gatsby.jpg" class="card-img-top" alt="img-top">
+                                            <div class="card-body d-flex flex-column justify-content-center">
+                                                <h5 class="card-title fs-6 fw-semibold lh-base mb-2">Revolutionize how
+                                                    you build the web</h5>
+                                                <p class="card-text fs-small"><img src="assets/clock.svg" alt="clock"
+                                                        class="mx-2">1h 46m <img src="assets/bar-chart-line.svg"
+                                                        alt="chart" class="mx-2">Intermediate</p>
+                                                <p class="d-flex text-warning align-items-center"><img
+                                                        src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star.svg" alt="sh">
+                                                    <img src="assets/star.svg" alt="s">
+                                                    <img src="assets/star.svg" alt="s" class="me-2">
+                                                    2.0
+                                                    <span class="text-dark ms-2 fs-small">(1.600)</span>
+                                                </p>
+                                                <p class="fw-semibold mb-4">$800 <del
+                                                        class="text-gray2 fs-small">$850</del>
+                                                </p>
+                                                <p class="d-flex alig-items-center"><img src="assets/avatar-6.jpg"
+                                                        alt="brooklyn" class="w-15 rounded-circle me-2"><span
+                                                        class="fs-small d-flex align-items-center me-2">Jenny
+                                                        Wilson</span>
+                                                    <img src="assets/bookmark.svg" alt="bookmark" class="w-10">
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-48 ">
+                                        <div class="card w-100">
+                                            <img src="assets/course-html.jpg" class="card-img-top" alt="img-top">
+                                            <div class="card-body d-flex flex-column justify-content-center">
+                                                <h5 class="card-title fs-6 fw-semibold lh-base mb-2">HTML Full Course -
+                                                    Build a Website Tutorial</h5>
+                                                <p class="card-text fs-small"><img src="assets/clock.svg" alt="clock"
+                                                        class="mx-2">3h 16m <img src="assets/bar-chart-line.svg"
+                                                        alt="chart" class="mx-2">Beginner</p>
+                                                <p class="d-flex text-warning align-items-center"><img
+                                                        src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sh">
+                                                    <img src="assets/star.svg" alt="s">
+                                                    <img src="assets/star.svg" alt="s" class="me-2">
+                                                    3.0
+                                                    <span class="text-dark ms-2 fs-small">(1.600)</span>
+                                                </p>
+                                                <p class="fw-semibold mb-4">$550 <del
+                                                        class="text-gray2 fs-small">$700</del>
+                                                </p>
+                                                <p class="d-flex alig-items-center"><img src="assets/avatar-8.jpg"
+                                                        alt="brooklyn" class="w-15 rounded-circle me-2"><span
+                                                        class="fs-small d-flex align-items-center me-2">Miston
+                                                        Wilson</span>
+                                                    <img src="assets/bookmark.svg" alt="bookmark" class="w-10">
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="d-flex w-100 gap-2">
+                                    <div class="w-48 ">
+                                        <div class="card w-100">
+                                            <img src="assets/course-node.jpg" class="card-img-top" alt="img-top">
+                                            <div class="card-body d-flex flex-column justify-content-center">
+                                                <h5 class="card-title fs-6 fw-semibold lh-base mb-2">Beginning Node.js,
+                                                    Express & MongoDB Development</h5>
+                                                <p class="card-text fs-small"><img src="assets/clock.svg" alt="clock"
+                                                        class="mx-2">2h 00m <img src="assets/bar-chart-line.svg"
+                                                        alt="chart" class="mx-2">Intermediate</p>
+                                                <p class="d-flex text-warning align-items-center"><img
+                                                        src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sh">
+                                                    <img src="assets/star-fill.svg" alt="s">
+                                                    <img src="assets/star.svg" alt="s" class="me-2">
+                                                    4.0
+                                                    <span class="text-dark ms-2 fs-small">(15.700)</span>
+                                                </p>
+                                                <p class="fw-semibold mb-4">$800 <del
+                                                        class="text-gray2 fs-small">$950</del>
+                                                </p>
+                                                <p class="d-flex alig-items-center"><img src="assets/avatar-3.jpg"
+                                                        alt="brooklyn" class="w-15 rounded-circle me-2"><span
+                                                        class="fs-small d-flex align-items-center me-2">Sina Ray</span>
+                                                    <img src="assets/bookmark.svg" alt="bookmark" class="w-10">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-48 ">
+                                        <div class="card w-100">
+                                            <img src="assets/course-laravel.jpg" class="card-img-top" alt="img-top">
+                                            <div class="card-body d-flex flex-column justify-content-center">
+                                                <h5 class="card-title fs-6 fw-semibold lh-base mb-2">Laravel: The
+                                                    Ultimate Beginner's Guide to Learn</h5>
+                                                <p class="card-text fs-small"><img src="assets/clock.svg" alt="clock"
+                                                        class="mx-2">1h 00m <img src="assets/bar-chart-line.svg"
+                                                        alt="chart" class="mx-2">Beginner</p>
+                                                <p class="d-flex text-warning align-items-center"><img
+                                                        src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sf">
+                                                    <img src="assets/star-fill.svg" alt="sh">
+                                                    <img src="assets/star-fill.svg" alt="s">
+                                                    <img src="assets/star-half.svg" alt="s" class="me-2">
+                                                    4.5
+                                                    <span class="text-dark ms-2 fs-small">(2.500)</span>
+                                                </p>
+                                                <p class="fw-semibold mb-4">$170 <del
+                                                        class="text-gray2 fs-small">$220</del>
+                                                </p>
+                                                <p class="d-flex alig-items-center"><img src="assets/avatar-7.jpg"
+                                                        alt="brooklyn" class="w-15 rounded-circle me-2"><span
+                                                        class="fs-small d-flex align-items-center me-2">Sobo
+                                                        Rikhan</span>
+                                                    <img src="assets/bookmark.svg" alt="bookmark" class="w-10">
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#trending"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#trending"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
+    <footer class="d-flex flex-column justify-content-center align-items-center">
+        <p class="mb-1 fs-small">© 2022 Geeks. All Rights Reserved. </p>
+        <ul class="list-unstyled d-flex gap-4">
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Feedback</li>
+            <li>Support</li>
+        </ul>
 
-
-
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

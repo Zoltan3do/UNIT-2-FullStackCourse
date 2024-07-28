@@ -1,36 +1,39 @@
-@import "scss/functions";
-@import "scss/variables";
+@import "functions";
+@import "variables";
 
 $new-primary: #7550FE;
 $new-success: #1ACB98;
 $new-warning: #FFAA46;
 
 $new-theme-colors: (
-    "primary":$new-primary,
-    "success":$new-success,
-    "warning":$new-warning,
-    "manuel":#045365
+  "primary":$new-primary,
+  "success":$new-success,
+  "warning":$new-warning,
+  "grayground":#141414,
+  "gray2":#666666,
+  "grayold" :#333333,
+  "chit":#4498E7
 );
 
 $theme-colors: map-merge($theme-colors, $new-theme-colors);
 
 $new-spacers: (
-    6: $spacer * 4,
-    7: $spacer * 5,
-    8: $spacer * 6,
-    9: $spacer * 7,
-    10: $spacer * 8
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6,
+  9: $spacer * 7,
+  10: $spacer * 8
 );
 
 $spacers: map-merge($spacers, $new-spacers);
 
 $new-font-sizes: (
-    supersmall: $font-size-base * .6,
-    small: $font-size-base * .8,
-    7: $font-size-base * 3,
-    8: $font-size-base * 3.5,
-    9: $font-size-base * 4,
-    10: $font-size-base * 4.5,
+  supersmall: $font-size-base * .6,
+  small: $font-size-base * .8,
+  7: $font-size-base * 3,
+  8: $font-size-base * 3.5,
+  9: $font-size-base * 4,
+  10: $font-size-base * 4.5,
 );
 
 $font-sizes: map-merge($font-sizes, $new-font-sizes);
@@ -62,10 +65,10 @@ $new-position-values: (
 $position-values: map-merge($position-values, $new-position-values);
 
 
-@import "scss/variables-dark";
-@import "scss/maps";
-@import "scss/mixins";
-@import "scss/utilities";
+@import "variables-dark";
+@import "maps";
+@import "mixins";
+@import "utilities";
 
 
 
@@ -73,6 +76,7 @@ $utilities: map-merge($utilities,
     ("width": map-merge(map-get($utilities, "width"),
         (values: map-merge(map-get(map-get($utilities, "width"), "values"),
             (5: 5%,
+              7:7%,
               10: 10%,
               15: 15%,
               20: 20%,
@@ -98,7 +102,7 @@ $utilities: map-merge($utilities,
       ),
     ));
 
-    
+
 $utilities: map-merge($utilities,
     ("height": map-merge(map-get($utilities, "height"),
         (values: map-merge(map-get(map-get($utilities, "height"), "values"),
@@ -128,10 +132,39 @@ $utilities: map-merge($utilities,
       ),
     ));
 
+#bottone {
+  max-width: 70px;
+  min-width: 50px
+}
 
+.circle {
+  width: 80px;
+  /* Imposta una larghezza fissa */
+  height: 80px;
+  /* Imposta un'altezza fissa */
+  border-radius: 50%;
+  /* Rende il div rotondo */
+  background-color: #007bff;
+  /* Colore di sfondo per il div */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+
+  @media (max-width: 768px) {
+      width: 60px;
+      height: 60px;
+  }
+
+  @media (max-width: 576px) {
+      width: 40px;
+      height: 40px;
+  }
+}
 
 
 
 // $headings-font-family: "Inter", sans-serif;
 
-@import "scss/bootstrap.scss";
+@import "bootstrap.scss";
